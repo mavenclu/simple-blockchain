@@ -1,19 +1,29 @@
 package cz.cvut.fel.omo.simpleblockchain.finance;
 
 import cz.cvut.fel.omo.simpleblockchain.SimpleBlockchainApplication;
+import cz.cvut.fel.omo.simpleblockchain.product.Product;
+import lombok.AccessLevel;
+import lombok.Getter;
 
+import javax.crypto.BadPaddingException;
+import javax.crypto.Cipher;
+import javax.crypto.IllegalBlockSizeException;
+import java.nio.charset.StandardCharsets;
 import java.security.*;
 import java.security.spec.ECGenParameterSpec;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
-
+@Getter
 public class Wallet {
-
-    public PrivateKey privateKey;
+    @Getter(AccessLevel.NONE)
+    private PrivateKey privateKey;
     public PublicKey publicKey;
     public HashMap<String, TransactionOutput> UTXOs = new HashMap<String, TransactionOutput>(); //only UTXOs owned by this wallet.
+    private Cipher cipher;
+    private Signature sign;
 
 
     public Wallet() {
@@ -26,15 +36,27 @@ public class Wallet {
      */
     public void generateKeyPair() {
         try {
-            KeyPairGenerator keyGen = KeyPairGenerator.getInstance("ECDSA", "BC");
-            SecureRandom random = SecureRandom.getInstance("SHA1PRNG");
-            ECGenParameterSpec ecSpec = new ECGenParameterSpec("prime192v1");
-            // Initialize the key generator and generate a KeyPair
-            keyGen.initialize(ecSpec, random);   //256 bytes provides an acceptable security level
-            KeyPair keyPair = keyGen.generateKeyPair();
-            // Set the public and private keys from the keyPair
-            privateKey = keyPair.getPrivate();
-            publicKey = keyPair.getPublic();
+            sign = Signature.getInstance("SHA256withRSA");
+
+//            KeyPairGenerator keyGen = KeyPairGenerator.getInstance("ECDSA", "BC");
+//            SecureRandom random = SecureRandom.getInstance("SHA1PRNG");
+//            ECGenParameterSpec ecSpec = new ECGenParameterSpec("prime192v1");
+//            // Initialize the key generator and generate a KeyPair
+//            keyGen.initialize(ecSpec, random);   //256 bytes provides an acceptable security level
+//            KeyPair keyPair = keyGen.generateKeyPair();
+//            // Set the public and private keys from the keyPair
+
+            KeyPairGenerator keyPairGen = KeyPairGenerator.getInstance("RSA");
+            keyPairGen.initialize(2048);
+            KeyPair pair = keyPairGen.generateKeyPair();
+            privateKey = pair.getPrivate();
+            publicKey = pair.getPublic();
+
+            cipher = Cipher.getInstance("RSA/ECB/PKCS1Padding");
+            cipher.init(Cipher.ENCRYPT_MODE, publicKey);
+            sign.initSign(privateKey);
+
+
         } catch (Exception e) {
             throw new RuntimeException();
         }
@@ -83,4 +105,10 @@ public class Wallet {
         return newTransaction;
     }
 
+    public String readClassifiedData(String cipherText) throws InvalidKeyException, BadPaddingException, IllegalBlockSizeException {
+        getCipher().init(Cipher.DECRYPT_MODE, this.privateKey);
+        byte[] plaintext = getCipher().doFinal(cipherText.getBytes(StandardCharsets.UTF_8));
+        return new String(plaintext);
+
+    }
 }

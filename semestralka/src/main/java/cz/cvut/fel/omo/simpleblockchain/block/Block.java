@@ -16,12 +16,12 @@ public class Block {
     public String previousHash;
     public String merkleRoot;
     public ArrayList<Transaction> transactions = new ArrayList<>();
-    public ProductData data;
+    public List<ProductData> data;
     public List<Channel> channels;
     private final long timeStamp;
     private int nonce;
 
-    public Block(ProductData data, String previousHash){
+    public Block(List<ProductData> data, String previousHash){
         this.data = data;
         this.previousHash = previousHash;
         this.timeStamp = new Date().getTime();
@@ -63,5 +63,9 @@ public class Block {
         transactions.add(transaction);
         System.out.println("Transaction Successfully added to Block");
         return true;
+    }
+
+    public boolean addData(){
+        return false;
     }
 }

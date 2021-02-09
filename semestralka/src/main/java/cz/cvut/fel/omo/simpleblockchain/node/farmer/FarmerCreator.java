@@ -1,13 +1,15 @@
 package cz.cvut.fel.omo.simpleblockchain.node.farmer;
 
+import cz.cvut.fel.omo.simpleblockchain.node.NodeUtils.NodeType;
+
 public class FarmerCreator extends FCreator {
 
     @Override
-    protected Farmer makeFarmer(String farmerType) {
+    public Farmer makeFarmer(String farmerType, String farmername) {
         if (farmerType.equals("small")){
-            return new SmallFarmer();
+            return new SmallFarmer(NodeType.FARMER,farmername);
         }else if (farmerType.equals("large")){
-            return new LargeFarmer();
+            return new LargeFarmer(NodeType.FARMER, farmername);
         }else {
             return null;
         }

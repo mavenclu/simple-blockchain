@@ -5,15 +5,20 @@ import cz.cvut.fel.omo.simpleblockchain.finance.Transaction;
 import cz.cvut.fel.omo.simpleblockchain.finance.TransactionInput;
 import cz.cvut.fel.omo.simpleblockchain.finance.TransactionOutput;
 import cz.cvut.fel.omo.simpleblockchain.finance.Wallet;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.io.IOException;
 import java.security.Security;
 import java.util.ArrayList;
 import java.util.HashMap;
 
 @SpringBootApplication
 public class SimpleBlockchainApplication {
+
+    private static final Logger logger = LogManager.getLogger(SimpleBlockchainApplication.class);
 
     public static ArrayList<Block> blockchain = new ArrayList<Block>();
     public static HashMap<String, TransactionOutput> UTXOs = new HashMap<String,TransactionOutput>(); //list of all unspent transactions.
@@ -24,8 +29,9 @@ public class SimpleBlockchainApplication {
     public static Wallet walletB;
     public static Transaction genesisTransaction;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         SpringApplication.run(SimpleBlockchainApplication.class, args);
+
 
 //add our blocks to the blockchain ArrayList:
         Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider()); //Setup Bouncey castle as a Security Provider
@@ -37,12 +43,13 @@ public class SimpleBlockchainApplication {
 
         //create genesis transaction, which sends 100 NoobCoin to walletA:
         genesisTransaction = new Transaction(coinbase.publicKey, walletA.publicKey, 100f, null);
-        genesisTransaction.generateSignature(coinbase.privateKey);	 //manually sign the genesis transaction
+//        genesisTransaction.generateSignature(coinbase.privateKey);	 //manually sign the genesis transaction
         genesisTransaction.transactionId = "0"; //manually set the transaction id
         genesisTransaction.outputs.add(new TransactionOutput(genesisTransaction.reciepient, genesisTransaction.value, genesisTransaction.transactionId)); //manually add the Transactions Output
         UTXOs.put(genesisTransaction.outputs.get(0).id, genesisTransaction.outputs.get(0)); //its important to store our first transaction in the UTXOs list.
 
         System.out.println("Creating and Mining Genesis block... ");
+        logger.warn("Log info here.");
         Block genesis = new Block("0");
         genesis.addTransaction(genesisTransaction);
         addBlock(genesis);
@@ -50,6 +57,8 @@ public class SimpleBlockchainApplication {
         //testing
         Block block1 = new Block(genesis.hash);
         System.out.println("\nWalletA's balance is: " + walletA.getBalance());
+        logger.warn("\nLogn infor here  \nWalletA's balance is: " + walletA.getBalance());
+
         System.out.println("\nWalletA is Attempting to send funds (40) to WalletB...");
         block1.addTransaction(walletA.sendFunds(walletB.publicKey, 40f));
         addBlock(block1);

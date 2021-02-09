@@ -1,0 +1,9 @@
+Feb 08, 2021 10:02:10 AM cz.cvut.fel.omo.simpleblockchain.SimpleBlockchainApplication main
+FINE: Log message redirected to a file
+Feb 08, 2021 10:02:10 AM cz.cvut.fel.omo.simpleblockchain.SimpleBlockchainApplication main
+FINER: The name of the logger is cz.cvut.fel.omo.simpleblockchain.SimpleBlockchainApplication
+Feb 08, 2021 10:02:10 AM cz.cvut.fel.omo.simpleblockchain.SimpleBlockchainApplication main
+WARNING: Creating and Minign genesis block.
+Feb 08, 2021 10:02:11 AM cz.cvut.fel.omo.simpleblockchain.SimpleBlockchainApplication main
+WARNING: 
+WalletA's balance is: 100.0

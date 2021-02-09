@@ -43,6 +43,7 @@ public class Transaction {
                 HashUtil.getStringFromKey(reciepient) +
                 value;
         signature = HashUtil.applyECDSASig(privateKey, data);
+
     }
     /*
     Verifies the data we signed hasnt been tampered with

@@ -1,0 +1,840 @@
+2021-02-08 11:00:15,507 INFO c.c.f.o.s.SimpleBlockchainApplication [restartedMain] Starting SimpleBlockchainApplication using Java 11.0.1 on Maries-MacBook-Pro.local with PID 20578 (/Users/mvenclu/Documents/CVUT/aktualniSemestr/OMO/GitLab/omo/semestralka/build/classes/java/main started by mvenclu in /Users/mvenclu/Documents/CVUT/aktualniSemestr/OMO/GitLab/omo/semestralka)
+2021-02-08 11:00:15,515 DEBUG c.c.f.o.s.SimpleBlockchainApplication [restartedMain] Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-08 11:00:15,516 INFO c.c.f.o.s.SimpleBlockchainApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-02-08 11:00:15,589 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2021-02-08 11:00:15,600 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+2021-02-08 11:00:15,935 DEBUG o.s.c.e.PropertySourcesPropertyResolver [restartedMain] Found key 'spring.template.provider.cache' in PropertySource 'configurationProperties' with value of type String
+2021-02-08 11:00:15,960 DEBUG o.s.c.e.PropertySourcesPropertyResolver [restartedMain] Found key 'spring.jmx.enabled' in PropertySource 'configurationProperties' with value of type String
+2021-02-08 11:00:15,963 DEBUG o.s.c.e.PropertySourcesPropertyResolver [restartedMain] Found key 'spring.application.admin.enabled' in PropertySource 'configurationProperties' with value of type String
+2021-02-08 11:00:16,013 DEBUG o.s.c.e.PropertySourcesPropertyResolver [restartedMain] Found key 'spring.jmx.enabled' in PropertySource 'configurationProperties' with value of type String
+2021-02-08 11:00:16,021 DEBUG o.s.c.e.PropertySourcesPropertyResolver [restartedMain] Found key 'spring.datasource.url' in PropertySource 'configurationProperties' with value of type String
+2021-02-08 11:00:16,251 DEBUG o.s.c.e.PropertySourcesPropertyResolver [restartedMain] Found key 'spring.template.provider.cache' in PropertySource 'configurationProperties' with value of type String
+2021-02-08 11:00:16,307 DEBUG o.s.c.e.PropertySourcesPropertyResolver [restartedMain] Found key 'spring.jmx.enabled' in PropertySource 'configurationProperties' with value of type String
+2021-02-08 11:00:16,313 DEBUG o.s.c.e.PropertySourcesPropertyResolver [restartedMain] Found key 'spring.application.admin.enabled' in PropertySource 'configurationProperties' with value of type String
+2021-02-08 11:00:16,325 DEBUG o.s.c.e.PropertySourcesPropertyResolver [restartedMain] Found key 'spring.jmx.enabled' in PropertySource 'configurationProperties' with value of type String
+2021-02-08 11:00:16,369 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-08 11:00:16,376 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages'
+2021-02-08 11:00:16,378 DEBUG o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Scanning for JPA repositories in packages cz.cvut.fel.omo.simpleblockchain.
+2021-02-08 11:00:16,390 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2021-02-08 11:00:16,667 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+2021-02-08 11:00:16,672 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'emBeanDefinitionRegistrarPostProcessor'
+2021-02-08 11:00:16,672 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration$DatabaseShutdownExecutorEntityManagerFactoryDependsOnPostProcessor'
+2021-02-08 11:00:16,678 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2021-02-08 11:00:16,679 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'preserveErrorControllerTargetClassPostProcessor'
+2021-02-08 11:00:16,680 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2021-02-08 11:00:16,680 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2021-02-08 11:00:16,684 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2021-02-08 11:00:16,685 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2021-02-08 11:00:16,688 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2021-02-08 11:00:16,688 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+2021-02-08 11:00:16,689 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.context.internalConfigurationPropertiesBinder'
+2021-02-08 11:00:16,689 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.context.internalConfigurationPropertiesBinderFactory'
+2021-02-08 11:00:16,691 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2021-02-08 11:00:16,719 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'dataSourceInitializerPostProcessor'
+2021-02-08 11:00:16,720 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'persistenceExceptionTranslationPostProcessor'
+2021-02-08 11:00:16,724 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'persistenceExceptionTranslationPostProcessor' via factory method to bean named 'environment'
+2021-02-08 11:00:16,727 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'webServerFactoryCustomizerBeanPostProcessor'
+2021-02-08 11:00:16,728 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'errorPageRegistrarBeanPostProcessor'
+2021-02-08 11:00:16,728 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'dataSourceInitializedPublisher'
+2021-02-08 11:00:16,732 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'hypermediaRepresentionModelProcessorConfigurator'
+2021-02-08 11:00:16,733 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2021-02-08 11:00:16,734 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2021-02-08 11:00:16,771 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'transactionAttributeSource'
+2021-02-08 11:00:16,775 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'transactionInterceptor'
+2021-02-08 11:00:16,776 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'transactionInterceptor' via factory method to bean named 'transactionAttributeSource'
+2021-02-08 11:00:16,782 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.transaction.config.internalTransactionAdvisor' via factory method to bean named 'transactionAttributeSource'
+2021-02-08 11:00:16,782 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.transaction.config.internalTransactionAdvisor' via factory method to bean named 'transactionInterceptor'
+2021-02-08 11:00:16,790 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'hypermediaRestTemplateBeanPostProcessor'
+2021-02-08 11:00:16,791 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'projectionDefinitionRegistrar'
+2021-02-08 11:00:16,797 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'annotatedEventHandlerInvoker'
+2021-02-08 11:00:16,797 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration'
+2021-02-08 11:00:16,800 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean '_relProvider'
+2021-02-08 11:00:16,801 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.hateoas.config.HateoasConfiguration'
+2021-02-08 11:00:16,802 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-08 11:00:16,805 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'relProviderPluginRegistry'
+2021-02-08 11:00:16,808 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'relProviderPluginRegistry' of type [org.springframework.plugin.core.support.PluginRegistryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-08 11:00:16,816 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'relProviderPluginRegistry' of type [org.springframework.plugin.core.OrderAwarePluginRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-08 11:00:16,820 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name '_relProvider' via factory method to bean named 'relProviderPluginRegistry'
+2021-02-08 11:00:16,822 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean '_relProvider' of type [org.springframework.hateoas.server.core.DelegatingLinkRelationProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-08 11:00:16,826 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'messageResolver'
+2021-02-08 11:00:16,831 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'messageResolver' of type [org.springframework.hateoas.mediatype.MessageSourceResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-08 11:00:16,832 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'jacksonGeoModule'
+2021-02-08 11:00:16,833 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration'
+2021-02-08 11:00:16,833 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration' of type [org.springframework.data.web.config.SpringDataJacksonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-08 11:00:16,839 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jacksonGeoModule' of type [org.springframework.data.geo.GeoModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-08 11:00:16,840 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@527afe2a'
+2021-02-08 11:00:16,840 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration' via constructor to bean named 'messageResolver'
+2021-02-08 11:00:16,840 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration' via constructor to bean named 'jacksonGeoModule'
+2021-02-08 11:00:16,853 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'configurerDelegate'
+2021-02-08 11:00:16,854 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'springBootRepositoryRestConfigurer'
+2021-02-08 11:00:16,855 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.data.rest.RepositoryRestMvcAutoConfiguration'
+2021-02-08 11:00:16,855 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.data.rest.RepositoryRestMvcAutoConfiguration' of type [org.springframework.boot.autoconfigure.data.rest.RepositoryRestMvcAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-08 11:00:16,856 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration'
+2021-02-08 11:00:16,857 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-08 11:00:16,859 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'standardJacksonObjectMapperBuilderCustomizer'
+2021-02-08 11:00:16,860 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration'
+2021-02-08 11:00:16,861 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-08 11:00:16,862 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties'
+2021-02-08 11:00:16,865 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.context.properties.BoundConfigurationProperties'
+2021-02-08 11:00:16,878 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-08 11:00:16,879 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'standardJacksonObjectMapperBuilderCustomizer' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@527afe2a'
+2021-02-08 11:00:16,879 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'standardJacksonObjectMapperBuilderCustomizer' via factory method to bean named 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties'
+2021-02-08 11:00:16,881 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-08 11:00:16,884 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'jacksonObjectMapperBuilder' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@527afe2a'
+2021-02-08 11:00:16,885 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'jacksonObjectMapperBuilder' via factory method to bean named 'standardJacksonObjectMapperBuilderCustomizer'
+2021-02-08 11:00:16,891 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'parameterNamesModule'
+2021-02-08 11:00:16,892 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration'
+2021-02-08 11:00:16,894 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-08 11:00:16,898 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-08 11:00:16,900 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'jsonComponentModule'
+2021-02-08 11:00:16,900 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration'
+2021-02-08 11:00:16,900 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-08 11:00:16,914 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-08 11:00:16,927 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-08 11:00:16,934 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'spring.data.rest-org.springframework.boot.autoconfigure.data.rest.RepositoryRestProperties'
+2021-02-08 11:00:16,948 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'spring.data.rest-org.springframework.boot.autoconfigure.data.rest.RepositoryRestProperties' of type [org.springframework.boot.autoconfigure.data.rest.RepositoryRestProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-08 11:00:16,949 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'springBootRepositoryRestConfigurer' of type [org.springframework.boot.autoconfigure.data.rest.SpringBootRepositoryRestConfigurer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-08 11:00:16,949 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'configurerDelegate' via factory method to bean named 'springBootRepositoryRestConfigurer'
+2021-02-08 11:00:16,950 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'configurerDelegate' of type [org.springframework.data.rest.webmvc.config.RepositoryRestConfigurerDelegate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-08 11:00:16,963 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'stringHttpMessageConverter'
+2021-02-08 11:00:16,963 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration'
+2021-02-08 11:00:16,963 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration' of type [org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-08 11:00:16,964 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'stringHttpMessageConverter' via factory method to bean named 'environment'
+2021-02-08 11:00:16,978 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'stringHttpMessageConverter' of type [org.springframework.http.converter.StringHttpMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-08 11:00:16,978 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'mappingJackson2HttpMessageConverter'
+2021-02-08 11:00:16,979 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration'
+2021-02-08 11:00:16,979 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration' of type [org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-08 11:00:16,980 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'jacksonObjectMapper'
+2021-02-08 11:00:16,980 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration'
+2021-02-08 11:00:16,980 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-08 11:00:16,989 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-08 11:00:16,989 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'jacksonObjectMapper' via factory method to bean named 'jacksonObjectMapperBuilder'
+2021-02-08 11:00:17,004 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-08 11:00:17,011 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'mappingJackson2HttpMessageConverter' via factory method to bean named 'jacksonObjectMapper'
+2021-02-08 11:00:17,012 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'mappingJackson2HttpMessageConverter' of type [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-08 11:00:17,013 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration' of type [org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-08 11:00:17,019 DEBUG o.s.u.c.s.UiApplicationContextUtils [restartedMain] Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@217c7b0e]
+2021-02-08 11:00:17,019 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'tomcatServletWebServerFactory'
+2021-02-08 11:00:17,020 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration$EmbeddedTomcat'
+2021-02-08 11:00:17,068 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'websocketServletWebServerCustomizer'
+2021-02-08 11:00:17,069 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration$TomcatWebSocketConfiguration'
+2021-02-08 11:00:17,076 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'servletWebServerFactoryCustomizer'
+2021-02-08 11:00:17,076 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryAutoConfiguration'
+2021-02-08 11:00:17,080 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+2021-02-08 11:00:17,115 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'servletWebServerFactoryCustomizer' via factory method to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+2021-02-08 11:00:17,122 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'tomcatServletWebServerFactoryCustomizer'
+2021-02-08 11:00:17,123 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'tomcatServletWebServerFactoryCustomizer' via factory method to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+2021-02-08 11:00:17,131 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'tomcatWebServerFactoryCustomizer'
+2021-02-08 11:00:17,131 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration$TomcatWebServerFactoryCustomizerConfiguration'
+2021-02-08 11:00:17,136 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'tomcatWebServerFactoryCustomizer' via factory method to bean named 'environment'
+2021-02-08 11:00:17,137 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'tomcatWebServerFactoryCustomizer' via factory method to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+2021-02-08 11:00:17,152 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'localeCharsetMappingsCustomizer'
+2021-02-08 11:00:17,154 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration'
+2021-02-08 11:00:17,158 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration' via constructor to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+2021-02-08 11:00:17,211 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'errorPageCustomizer'
+2021-02-08 11:00:17,212 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration'
+2021-02-08 11:00:17,212 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration' via constructor to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+2021-02-08 11:00:17,215 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'dispatcherServletRegistration'
+2021-02-08 11:00:17,215 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration'
+2021-02-08 11:00:17,218 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'dispatcherServlet'
+2021-02-08 11:00:17,218 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletConfiguration'
+2021-02-08 11:00:17,221 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+2021-02-08 11:00:17,228 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'dispatcherServlet' via factory method to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+2021-02-08 11:00:17,246 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'dispatcherServletRegistration' via factory method to bean named 'dispatcherServlet'
+2021-02-08 11:00:17,246 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'dispatcherServletRegistration' via factory method to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+2021-02-08 11:00:17,248 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'multipartConfigElement'
+2021-02-08 11:00:17,248 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration'
+2021-02-08 11:00:17,249 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'spring.servlet.multipart-org.springframework.boot.autoconfigure.web.servlet.MultipartProperties'
+2021-02-08 11:00:17,253 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration' via constructor to bean named 'spring.servlet.multipart-org.springframework.boot.autoconfigure.web.servlet.MultipartProperties'
+2021-02-08 11:00:17,263 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'errorPageCustomizer' via factory method to bean named 'dispatcherServletRegistration'
+2021-02-08 11:00:17,590 INFO o.a.c.h.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-08 11:00:17,591 INFO o.a.c.c.StandardService [restartedMain] Starting service [Tomcat]
+2021-02-08 11:00:17,591 INFO o.a.c.c.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-08 11:00:17,663 INFO o.a.c.c.C.[.[.[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-02-08 11:00:17,667 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'requestContextFilter'
+2021-02-08 11:00:17,682 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'formContentFilter'
+2021-02-08 11:00:17,682 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration'
+2021-02-08 11:00:17,695 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'characterEncodingFilter'
+2021-02-08 11:00:17,730 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'inMemoryDatabaseShutdownExecutor'
+2021-02-08 11:00:17,731 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration'
+2021-02-08 11:00:17,733 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'dataSource'
+2021-02-08 11:00:17,733 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari'
+2021-02-08 11:00:17,734 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties'
+2021-02-08 11:00:17,749 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'dataSource' via factory method to bean named 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties'
+2021-02-08 11:00:17,758 DEBUG c.z.h.HikariConfig [restartedMain] Driver class org.postgresql.Driver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@3ef21a8b
+2021-02-08 11:00:17,774 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker'
+2021-02-08 11:00:17,776 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' via constructor to bean named 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties'
+2021-02-08 11:00:17,776 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@527afe2a'
+2021-02-08 11:00:17,782 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'inMemoryDatabaseShutdownExecutor' via factory method to bean named 'dataSource'
+2021-02-08 11:00:17,782 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'inMemoryDatabaseShutdownExecutor' via factory method to bean named 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties'
+2021-02-08 11:00:17,784 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'entityManagerFactory'
+2021-02-08 11:00:17,784 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration'
+2021-02-08 11:00:17,785 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties'
+2021-02-08 11:00:17,790 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'spring.jpa.hibernate-org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties'
+2021-02-08 11:00:17,793 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration' via constructor to bean named 'dataSource'
+2021-02-08 11:00:17,793 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration' via constructor to bean named 'spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties'
+2021-02-08 11:00:17,793 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@199855dd'
+2021-02-08 11:00:17,793 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration' via constructor to bean named 'spring.jpa.hibernate-org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties'
+2021-02-08 11:00:17,795 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'hikariPoolDataSourceMetadataProvider'
+2021-02-08 11:00:17,795 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration'
+2021-02-08 11:00:17,812 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'entityManagerFactoryBuilder'
+2021-02-08 11:00:17,812 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'jpaVendorAdapter'
+2021-02-08 11:00:17,826 DEBUG o.j.logging [restartedMain] Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2021-02-08 11:00:17,843 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'entityManagerFactoryBuilder' via factory method to bean named 'jpaVendorAdapter'
+2021-02-08 11:00:17,855 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'entityManagerFactory' via factory method to bean named 'entityManagerFactoryBuilder'
+2021-02-08 11:00:17,923 DEBUG o.s.o.j.LocalContainerEntityManagerFactoryBean [restartedMain] Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-02-08 11:00:17,945 DEBUG o.h.j.i.u.LogHelper [restartedMain] PersistenceUnitInfo [
+	name: default
+	persistence provider classname: null
+	classloader: org.springframework.boot.devtools.restart.classloader.RestartClassLoader@3ef21a8b
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: HikariDataSource (null)
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/Users/mvenclu/Documents/CVUT/aktualniSemestr/OMO/GitLab/omo/semestralka/build/classes/java/main/
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names []
+	Mapping files names []
+	Properties []
+2021-02-08 11:00:17,957 DEBUG o.h.i.i.IntegratorServiceImpl [restartedMain] Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2021-02-08 11:00:17,958 DEBUG o.h.i.i.IntegratorServiceImpl [restartedMain] Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2021-02-08 11:00:17,960 DEBUG o.h.i.i.IntegratorServiceImpl [restartedMain] Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2021-02-08 11:00:18,017 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-08 11:00:18,020 DEBUG o.h.c.Environment [restartedMain] HHH000206: hibernate.properties not found
+2021-02-08 11:00:18,148 DEBUG o.h.s.s.ServiceBinding [restartedMain] Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2021-02-08 11:00:18,161 DEBUG o.h.c.i.RegionFactoryInitiator [restartedMain] Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2021-02-08 11:00:18,162 DEBUG o.h.c.i.RegionFactoryInitiator [restartedMain] Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2021-02-08 11:00:18,174 INFO o.h.a.c.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-08 11:00:18,195 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration boolean -> org.hibernate.type.BooleanType@1e30d738
+2021-02-08 11:00:18,196 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration boolean -> org.hibernate.type.BooleanType@1e30d738
+2021-02-08 11:00:18,196 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@1e30d738
+2021-02-08 11:00:18,196 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@e935f5b
+2021-02-08 11:00:18,197 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration true_false -> org.hibernate.type.TrueFalseType@188b73f
+2021-02-08 11:00:18,198 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration yes_no -> org.hibernate.type.YesNoType@798dc12b
+2021-02-08 11:00:18,199 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration byte -> org.hibernate.type.ByteType@132f31ab
+2021-02-08 11:00:18,199 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration byte -> org.hibernate.type.ByteType@132f31ab
+2021-02-08 11:00:18,199 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@132f31ab
+2021-02-08 11:00:18,200 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration character -> org.hibernate.type.CharacterType@2e8d90e0
+2021-02-08 11:00:18,200 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration char -> org.hibernate.type.CharacterType@2e8d90e0
+2021-02-08 11:00:18,200 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@2e8d90e0
+2021-02-08 11:00:18,201 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration short -> org.hibernate.type.ShortType@7683a9af
+2021-02-08 11:00:18,201 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration short -> org.hibernate.type.ShortType@7683a9af
+2021-02-08 11:00:18,201 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.lang.Short -> org.hibernate.type.ShortType@7683a9af
+2021-02-08 11:00:18,202 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration integer -> org.hibernate.type.IntegerType@4ff0520
+2021-02-08 11:00:18,202 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration int -> org.hibernate.type.IntegerType@4ff0520
+2021-02-08 11:00:18,202 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@4ff0520
+2021-02-08 11:00:18,203 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration long -> org.hibernate.type.LongType@69813e4b
+2021-02-08 11:00:18,203 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration long -> org.hibernate.type.LongType@69813e4b
+2021-02-08 11:00:18,203 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.lang.Long -> org.hibernate.type.LongType@69813e4b
+2021-02-08 11:00:18,204 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration float -> org.hibernate.type.FloatType@33268601
+2021-02-08 11:00:18,204 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration float -> org.hibernate.type.FloatType@33268601
+2021-02-08 11:00:18,204 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.lang.Float -> org.hibernate.type.FloatType@33268601
+2021-02-08 11:00:18,205 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration double -> org.hibernate.type.DoubleType@10364789
+2021-02-08 11:00:18,205 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration double -> org.hibernate.type.DoubleType@10364789
+2021-02-08 11:00:18,205 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@10364789
+2021-02-08 11:00:18,206 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@f0e38a1
+2021-02-08 11:00:18,206 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@f0e38a1
+2021-02-08 11:00:18,207 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration big_integer -> org.hibernate.type.BigIntegerType@76fa4bb6
+2021-02-08 11:00:18,207 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@76fa4bb6
+2021-02-08 11:00:18,208 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration string -> org.hibernate.type.StringType@1fa2703c
+2021-02-08 11:00:18,208 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.lang.String -> org.hibernate.type.StringType@1fa2703c
+2021-02-08 11:00:18,208 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration nstring -> org.hibernate.type.StringNVarcharType@73035ead
+2021-02-08 11:00:18,209 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@2ce8a282
+2021-02-08 11:00:18,210 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration url -> org.hibernate.type.UrlType@4c3aa854
+2021-02-08 11:00:18,210 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.net.URL -> org.hibernate.type.UrlType@4c3aa854
+2021-02-08 11:00:18,210 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration Duration -> org.hibernate.type.DurationType@641393f0
+2021-02-08 11:00:18,211 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.time.Duration -> org.hibernate.type.DurationType@641393f0
+2021-02-08 11:00:18,211 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration Instant -> org.hibernate.type.InstantType@14b8f244
+2021-02-08 11:00:18,212 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.time.Instant -> org.hibernate.type.InstantType@14b8f244
+2021-02-08 11:00:18,212 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@4148d138
+2021-02-08 11:00:18,213 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@4148d138
+2021-02-08 11:00:18,213 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration LocalDate -> org.hibernate.type.LocalDateType@1f292834
+2021-02-08 11:00:18,213 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@1f292834
+2021-02-08 11:00:18,215 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@384fb1f2
+2021-02-08 11:00:18,215 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@384fb1f2
+2021-02-08 11:00:18,216 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@55e349f4
+2021-02-08 11:00:18,217 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@55e349f4
+2021-02-08 11:00:18,218 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@7714b47d
+2021-02-08 11:00:18,218 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@7714b47d
+2021-02-08 11:00:18,219 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@23f530cc
+2021-02-08 11:00:18,220 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@23f530cc
+2021-02-08 11:00:18,221 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration date -> org.hibernate.type.DateType@785fb4b1
+2021-02-08 11:00:18,221 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.sql.Date -> org.hibernate.type.DateType@785fb4b1
+2021-02-08 11:00:18,224 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration time -> org.hibernate.type.TimeType@bb27f85
+2021-02-08 11:00:18,225 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.sql.Time -> org.hibernate.type.TimeType@bb27f85
+2021-02-08 11:00:18,227 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration timestamp -> org.hibernate.type.TimestampType@f04b875
+2021-02-08 11:00:18,228 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@f04b875
+2021-02-08 11:00:18,228 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.util.Date -> org.hibernate.type.TimestampType@f04b875
+2021-02-08 11:00:18,229 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@580f9250
+2021-02-08 11:00:18,232 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration calendar -> org.hibernate.type.CalendarType@3272f704
+2021-02-08 11:00:18,232 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@3272f704
+2021-02-08 11:00:18,232 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@3272f704
+2021-02-08 11:00:18,233 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@37fcfdee
+2021-02-08 11:00:18,234 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@23047f7
+2021-02-08 11:00:18,236 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration locale -> org.hibernate.type.LocaleType@ebcd28c
+2021-02-08 11:00:18,237 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@ebcd28c
+2021-02-08 11:00:18,239 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration currency -> org.hibernate.type.CurrencyType@559483ae
+2021-02-08 11:00:18,241 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@559483ae
+2021-02-08 11:00:18,244 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration timezone -> org.hibernate.type.TimeZoneType@4025ec30
+2021-02-08 11:00:18,245 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@4025ec30
+2021-02-08 11:00:18,246 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration class -> org.hibernate.type.ClassType@39f880c4
+2021-02-08 11:00:18,246 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.lang.Class -> org.hibernate.type.ClassType@39f880c4
+2021-02-08 11:00:18,248 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@318414ee
+2021-02-08 11:00:18,249 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@318414ee
+2021-02-08 11:00:18,250 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@5069c323
+2021-02-08 11:00:18,255 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration binary -> org.hibernate.type.BinaryType@6bdd1921
+2021-02-08 11:00:18,256 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration byte[] -> org.hibernate.type.BinaryType@6bdd1921
+2021-02-08 11:00:18,256 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration [B -> org.hibernate.type.BinaryType@6bdd1921
+2021-02-08 11:00:18,257 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@1fb3bda8
+2021-02-08 11:00:18,258 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@1fb3bda8
+2021-02-08 11:00:18,258 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@1fb3bda8
+2021-02-08 11:00:18,259 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration row_version -> org.hibernate.type.RowVersionType@2c14e8f5
+2021-02-08 11:00:18,259 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration image -> org.hibernate.type.ImageType@316db73e
+2021-02-08 11:00:18,262 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration characters -> org.hibernate.type.CharArrayType@5ebf1bce
+2021-02-08 11:00:18,263 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration char[] -> org.hibernate.type.CharArrayType@5ebf1bce
+2021-02-08 11:00:18,263 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration [C -> org.hibernate.type.CharArrayType@5ebf1bce
+2021-02-08 11:00:18,266 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@46b5e4a4
+2021-02-08 11:00:18,266 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@46b5e4a4
+2021-02-08 11:00:18,266 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@46b5e4a4
+2021-02-08 11:00:18,266 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration text -> org.hibernate.type.TextType@641f53be
+2021-02-08 11:00:18,267 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration ntext -> org.hibernate.type.NTextType@5255ea0a
+2021-02-08 11:00:18,268 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration blob -> org.hibernate.type.BlobType@672d5892
+2021-02-08 11:00:18,269 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@672d5892
+2021-02-08 11:00:18,270 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@218ebab5
+2021-02-08 11:00:18,273 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration clob -> org.hibernate.type.ClobType@5c8ad1b1
+2021-02-08 11:00:18,274 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@5c8ad1b1
+2021-02-08 11:00:18,279 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration nclob -> org.hibernate.type.NClobType@20b44194
+2021-02-08 11:00:18,279 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@20b44194
+2021-02-08 11:00:18,279 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@1e8bcb18
+2021-02-08 11:00:18,280 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@4be36454
+2021-02-08 11:00:18,281 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration serializable -> org.hibernate.type.SerializableType@45f11ba8
+2021-02-08 11:00:18,283 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration object -> org.hibernate.type.ObjectType@1aa00bb9
+2021-02-08 11:00:18,283 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@1aa00bb9
+2021-02-08 11:00:18,284 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@6a517ae6
+2021-02-08 11:00:18,284 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@6a4f1834
+2021-02-08 11:00:18,284 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@45b40ced
+2021-02-08 11:00:18,284 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@794fccb
+2021-02-08 11:00:18,285 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@66f32095
+2021-02-08 11:00:18,286 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@74ef1ac7
+2021-02-08 11:00:18,286 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@11d9b3d3
+2021-02-08 11:00:18,288 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@318b6787
+2021-02-08 11:00:18,316 DEBUG o.h.b.i.BootstrapContextImpl [restartedMain] Injecting JPA temp ClassLoader [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@16736da6] into BootstrapContext; was [null]
+2021-02-08 11:00:18,316 DEBUG o.h.b.i.ClassLoaderAccessImpl [restartedMain] ClassLoaderAccessImpl#injectTempClassLoader(org.springframework.instrument.classloading.SimpleThrowawayClassLoader@16736da6) [was null]
+2021-02-08 11:00:18,317 DEBUG o.h.b.i.BootstrapContextImpl [restartedMain] Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@5a4706c7] into BootstrapContext; was [null]
+2021-02-08 11:00:18,327 DEBUG o.h.b.i.BootstrapContextImpl [restartedMain] Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@61e872] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@4bb25abe]
+2021-02-08 11:00:18,342 DEBUG o.h.b.i.BootstrapContextImpl [restartedMain] Injecting JPA temp ClassLoader [null] into BootstrapContext; was [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@16736da6]
+2021-02-08 11:00:18,342 DEBUG o.h.b.i.ClassLoaderAccessImpl [restartedMain] ClassLoaderAccessImpl#injectTempClassLoader(null) [was org.springframework.instrument.classloading.SimpleThrowawayClassLoader@16736da6]
+2021-02-08 11:00:18,349 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [restartedMain] Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2021-02-08 11:00:18,350 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [restartedMain] Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2021-02-08 11:00:18,350 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [restartedMain] Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2021-02-08 11:00:18,350 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [restartedMain] Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2021-02-08 11:00:18,351 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [restartedMain] Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2021-02-08 11:00:18,351 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [restartedMain] Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2021-02-08 11:00:18,352 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [restartedMain] Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2021-02-08 11:00:18,353 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [restartedMain] Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2021-02-08 11:00:18,353 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [restartedMain] Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2021-02-08 11:00:18,354 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [restartedMain] Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2021-02-08 11:00:18,354 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [restartedMain] Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2021-02-08 11:00:18,355 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [restartedMain] Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2021-02-08 11:00:18,355 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [restartedMain] Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2021-02-08 11:00:18,356 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [restartedMain] Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2021-02-08 11:00:18,360 DEBUG c.z.h.HikariConfig [restartedMain] HikariPool-1 - configuration:
+2021-02-08 11:00:18,363 DEBUG c.z.h.HikariConfig [restartedMain] allowPoolSuspension.............false
+2021-02-08 11:00:18,364 DEBUG c.z.h.HikariConfig [restartedMain] autoCommit......................true
+2021-02-08 11:00:18,364 DEBUG c.z.h.HikariConfig [restartedMain] catalog.........................none
+2021-02-08 11:00:18,364 DEBUG c.z.h.HikariConfig [restartedMain] connectionInitSql...............none
+2021-02-08 11:00:18,364 DEBUG c.z.h.HikariConfig [restartedMain] connectionTestQuery.............none
+2021-02-08 11:00:18,364 DEBUG c.z.h.HikariConfig [restartedMain] connectionTimeout...............30000
+2021-02-08 11:00:18,364 DEBUG c.z.h.HikariConfig [restartedMain] dataSource......................none
+2021-02-08 11:00:18,364 DEBUG c.z.h.HikariConfig [restartedMain] dataSourceClassName.............none
+2021-02-08 11:00:18,364 DEBUG c.z.h.HikariConfig [restartedMain] dataSourceJNDI..................none
+2021-02-08 11:00:18,365 DEBUG c.z.h.HikariConfig [restartedMain] dataSourceProperties............{password=<masked>}
+2021-02-08 11:00:18,365 DEBUG c.z.h.HikariConfig [restartedMain] driverClassName................."org.postgresql.Driver"
+2021-02-08 11:00:18,365 DEBUG c.z.h.HikariConfig [restartedMain] exceptionOverrideClassName......none
+2021-02-08 11:00:18,366 DEBUG c.z.h.HikariConfig [restartedMain] healthCheckProperties...........{}
+2021-02-08 11:00:18,366 DEBUG c.z.h.HikariConfig [restartedMain] healthCheckRegistry.............none
+2021-02-08 11:00:18,366 DEBUG c.z.h.HikariConfig [restartedMain] idleTimeout.....................600000
+2021-02-08 11:00:18,366 DEBUG c.z.h.HikariConfig [restartedMain] initializationFailTimeout.......1
+2021-02-08 11:00:18,367 DEBUG c.z.h.HikariConfig [restartedMain] isolateInternalQueries..........false
+2021-02-08 11:00:18,367 DEBUG c.z.h.HikariConfig [restartedMain] jdbcUrl.........................jdbc:postgresql://localhost:5432/omoblockchaindb
+2021-02-08 11:00:18,367 DEBUG c.z.h.HikariConfig [restartedMain] leakDetectionThreshold..........0
+2021-02-08 11:00:18,367 DEBUG c.z.h.HikariConfig [restartedMain] maxLifetime.....................1800000
+2021-02-08 11:00:18,367 DEBUG c.z.h.HikariConfig [restartedMain] maximumPoolSize.................10
+2021-02-08 11:00:18,367 DEBUG c.z.h.HikariConfig [restartedMain] metricRegistry..................none
+2021-02-08 11:00:18,369 DEBUG c.z.h.HikariConfig [restartedMain] metricsTrackerFactory...........none
+2021-02-08 11:00:18,369 DEBUG c.z.h.HikariConfig [restartedMain] minimumIdle.....................10
+2021-02-08 11:00:18,369 DEBUG c.z.h.HikariConfig [restartedMain] password........................<masked>
+2021-02-08 11:00:18,369 DEBUG c.z.h.HikariConfig [restartedMain] poolName........................"HikariPool-1"
+2021-02-08 11:00:18,370 DEBUG c.z.h.HikariConfig [restartedMain] readOnly........................false
+2021-02-08 11:00:18,370 DEBUG c.z.h.HikariConfig [restartedMain] registerMbeans..................false
+2021-02-08 11:00:18,370 DEBUG c.z.h.HikariConfig [restartedMain] scheduledExecutor...............none
+2021-02-08 11:00:18,370 DEBUG c.z.h.HikariConfig [restartedMain] schema..........................none
+2021-02-08 11:00:18,370 DEBUG c.z.h.HikariConfig [restartedMain] threadFactory...................internal
+2021-02-08 11:00:18,370 DEBUG c.z.h.HikariConfig [restartedMain] transactionIsolation............default
+2021-02-08 11:00:18,371 DEBUG c.z.h.HikariConfig [restartedMain] username........................"mavenclu"
+2021-02-08 11:00:18,371 DEBUG c.z.h.HikariConfig [restartedMain] validationTimeout...............5000
+2021-02-08 11:00:18,371 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-02-08 11:00:18,484 DEBUG c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6cd21634
+2021-02-08 11:00:18,487 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-02-08 11:00:18,500 DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator [restartedMain] Database ->
+       name : PostgreSQL
+    version : 12.5
+      major : 12
+      minor : 5
+2021-02-08 11:00:18,500 DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator [restartedMain] Driver ->
+       name : PostgreSQL JDBC Driver
+    version : 42.2.18
+      major : 42
+      minor : 2
+2021-02-08 11:00:18,501 DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator [restartedMain] JDBC version : 4.2
+2021-02-08 11:00:18,521 INFO o.h.d.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-02-08 11:00:18,541 DEBUG o.h.e.j.e.s.IdentifierHelperBuilder [restartedMain] JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+2021-02-08 11:00:18,587 DEBUG c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=1, active=1, idle=0, waiting=0)
+2021-02-08 11:00:18,594 DEBUG c.z.h.p.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5b70ef1f
+2021-02-08 11:00:18,602 DEBUG c.z.h.p.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@55b70a01
+2021-02-08 11:00:18,607 DEBUG o.h.b.m.r.Namespace [restartedMain] Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2021-02-08 11:00:18,608 DEBUG c.z.h.p.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5188846f
+2021-02-08 11:00:18,610 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@f148961
+2021-02-08 11:00:18,610 DEBUG o.h.t.BasicTypeRegistry [restartedMain] Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@f148961
+2021-02-08 11:00:18,610 DEBUG o.h.t.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@318414ee
+2021-02-08 11:00:18,612 DEBUG o.h.t.s.TypeConfiguration$Scope [restartedMain] Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@7c4a8ba6] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@27782d07]
+2021-02-08 11:00:18,615 DEBUG c.z.h.p.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@148a003a
+2021-02-08 11:00:18,620 DEBUG c.z.h.p.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@48de1da3
+2021-02-08 11:00:18,626 DEBUG c.z.h.p.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@25d4f1bb
+2021-02-08 11:00:18,632 DEBUG c.z.h.p.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@306ab292
+2021-02-08 11:00:18,639 DEBUG c.z.h.p.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@74a5ff75
+2021-02-08 11:00:18,645 DEBUG c.z.h.p.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4c2ed747
+2021-02-08 11:00:18,645 DEBUG c.z.h.p.HikariPool [HikariPool-1 connection adder] HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 11:00:18,653 DEBUG o.h.i.SessionFactoryImpl [restartedMain] Building session factory
+2021-02-08 11:00:18,654 DEBUG o.h.c.Settings [restartedMain] SessionFactory name : null
+2021-02-08 11:00:18,654 DEBUG o.h.c.Settings [restartedMain] Automatic flush during beforeCompletion(): enabled
+2021-02-08 11:00:18,654 DEBUG o.h.c.Settings [restartedMain] Automatic session close at end of transaction: disabled
+2021-02-08 11:00:18,654 DEBUG o.h.c.Settings [restartedMain] Statistics: disabled
+2021-02-08 11:00:18,654 DEBUG o.h.c.Settings [restartedMain] Deleted entity synthetic identifier rollback: disabled
+2021-02-08 11:00:18,654 DEBUG o.h.c.Settings [restartedMain] Default entity-mode: pojo
+2021-02-08 11:00:18,654 DEBUG o.h.c.Settings [restartedMain] Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2021-02-08 11:00:18,654 DEBUG o.h.c.Settings [restartedMain] Allow initialization of lazy state outside session : disabled
+2021-02-08 11:00:18,654 DEBUG o.h.c.Settings [restartedMain] Using BatchFetchStyle : LEGACY
+2021-02-08 11:00:18,654 DEBUG o.h.c.Settings [restartedMain] Default batch fetch size: -1
+2021-02-08 11:00:18,654 DEBUG o.h.c.Settings [restartedMain] Maximum outer join fetch depth: null
+2021-02-08 11:00:18,654 DEBUG o.h.c.Settings [restartedMain] Default null ordering: NONE
+2021-02-08 11:00:18,654 DEBUG o.h.c.Settings [restartedMain] Order SQL updates by primary key: disabled
+2021-02-08 11:00:18,654 DEBUG o.h.c.Settings [restartedMain] Order SQL inserts for batching: disabled
+2021-02-08 11:00:18,654 DEBUG o.h.c.Settings [restartedMain] multi-tenancy strategy : NONE
+2021-02-08 11:00:18,655 DEBUG o.h.c.Settings [restartedMain] JTA Track by Thread: enabled
+2021-02-08 11:00:18,655 DEBUG o.h.c.Settings [restartedMain] Query language substitutions: {}
+2021-02-08 11:00:18,655 DEBUG o.h.c.Settings [restartedMain] Named query checking : enabled
+2021-02-08 11:00:18,655 DEBUG o.h.c.Settings [restartedMain] Second-level cache: disabled
+2021-02-08 11:00:18,655 DEBUG o.h.c.Settings [restartedMain] Second-level query cache: disabled
+2021-02-08 11:00:18,655 DEBUG o.h.c.Settings [restartedMain] Second-level query cache factory: null
+2021-02-08 11:00:18,655 DEBUG o.h.c.Settings [restartedMain] Second-level cache region prefix: null
+2021-02-08 11:00:18,655 DEBUG o.h.c.Settings [restartedMain] Optimize second-level cache for minimal puts: disabled
+2021-02-08 11:00:18,655 DEBUG o.h.c.Settings [restartedMain] Structured second-level cache entries: disabled
+2021-02-08 11:00:18,655 DEBUG o.h.c.Settings [restartedMain] Second-level cache direct-reference entries: disabled
+2021-02-08 11:00:18,655 DEBUG o.h.c.Settings [restartedMain] Automatic eviction of collection cache: disabled
+2021-02-08 11:00:18,655 DEBUG o.h.c.Settings [restartedMain] JDBC batch size: 15
+2021-02-08 11:00:18,655 DEBUG o.h.c.Settings [restartedMain] JDBC batch updates for versioned data: enabled
+2021-02-08 11:00:18,655 DEBUG o.h.c.Settings [restartedMain] Scrollable result sets: enabled
+2021-02-08 11:00:18,655 DEBUG o.h.c.Settings [restartedMain] Wrap result sets: disabled
+2021-02-08 11:00:18,655 DEBUG o.h.c.Settings [restartedMain] JDBC3 getGeneratedKeys(): enabled
+2021-02-08 11:00:18,655 DEBUG o.h.c.Settings [restartedMain] JDBC result set fetch size: null
+2021-02-08 11:00:18,655 DEBUG o.h.c.Settings [restartedMain] Connection release mode: ON_CLOSE
+2021-02-08 11:00:18,655 DEBUG o.h.c.Settings [restartedMain] Generate SQL with comments: disabled
+2021-02-08 11:00:18,655 DEBUG o.h.c.Settings [restartedMain] JPA compliance - query : disabled
+2021-02-08 11:00:18,655 DEBUG o.h.c.Settings [restartedMain] JPA compliance - closed-handling : disabled
+2021-02-08 11:00:18,655 DEBUG o.h.c.Settings [restartedMain] JPA compliance - lists : disabled
+2021-02-08 11:00:18,655 DEBUG o.h.c.Settings [restartedMain] JPA compliance - transactions : disabled
+2021-02-08 11:00:18,712 DEBUG o.h.i.SessionFactoryImpl [restartedMain] Session factory constructed with filter configurations : {}
+2021-02-08 11:00:18,713 DEBUG o.h.i.SessionFactoryImpl [restartedMain] Instantiating session factory with properties: {gopherProxySet=false, awt.toolkit=sun.lwawt.macosx.LWCToolkit, hibernate.id.new_generator_mappings=true, java.specification.version=11, sun.cpu.isalist=, hibernate.resource.beans.container=org.springframework.orm.hibernate5.SpringBeanContainer@29c7741, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, sun.jnu.encoding=UTF-8, hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect, hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy, java.class.path=/Users/mvenclu/Documents/CVUT/aktualniSemestr/OMO/GitLab/omo/semestralka/build/classes/java/main:/Users/mvenclu/Documents/CVUT/aktualniSemestr/OMO/GitLab/omo/semestralka/build/resources/main:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.16/6dc192c7f93ec1853f70d59d8a6dcf94eb42866/lombok-1.18.16.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcprov-jdk15on/1.68/46a080368d38b428d237a59458f9bc915222894d/bcprov-jdk15on-1.68.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.6/9180733b7df8542621dc12e21e87557e8c99b8cb/gson-2.8.6.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-log4j2/1.2.0.RELEASE/92e95e61b65f0f9a0ac2bad8f47d4610d9cece6b/spring-boot-starter-log4j2-1.2.0.RELEASE.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-jpa/2.4.2/4c703d6746355d0d894fc22488c8756b8fe25d29/spring-boot-starter-data-jpa-2.4.2.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-rest/2.4.2/5dd0d83fdddb3b07c511e33d8ba8e8049842a436/spring-boot-starter-data-rest-2.4.2.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-hateoas/2.4.2/11c63c9dd7ffc383c11143adcc6c4608e3120bab/spring-boot-starter-hateoas-2.4.2.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.30/cd92524ea19d27e5b94ecd251e1af729cffdfe15/jcl-over-slf4j-1.7.30.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.30/d58bebff8cbf70ff52b59208586095f467656c30/jul-to-slf4j-1.7.30.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-slf4j-impl/2.13.3/7cca27a921a18645139cf651c04b83b1a19cfd76/log4j-slf4j-impl-2.13.3.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.13.3/4e857439fc4fe974d212adaaaa3b118b8b50e3ec/log4j-core-2.13.3.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.13.3/ec1508160b93d274b1add34419b897bae84c6ca9/log4j-api-2.13.3.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-aop/2.4.2/442c08d70de18d5b1ddc903d1113eb8354690c1b/spring-boot-starter-aop-2.4.2.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jdbc/2.4.2/ad7b041d1f536bf060abc10afa66ae84e6aa6801/spring-boot-starter-jdbc-2.4.2.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/jakarta.transaction/jakarta.transaction-api/1.3.3/c4179d48720a1e87202115fbed6089bdc4195405/jakarta.transaction-api-1.3.3.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/jakarta.persistence/jakarta.persistence-api/2.2.3/8f6ea5daedc614f07a3654a455660145286f024e/jakarta.persistence-api-2.2.3.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.4.27.Final/d711d8d2ad02622e4575ecf1fbb069a256f4fa91/hibernate-core-5.4.27.Final.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/2.4.3/c796f4a5fa9cc5aa5fcf931a900cd2c686d06cda/spring-data-jpa-2.4.3.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aspects/5.3.3/5e289da5e52cb840066e3fa10254782c5c2bb5a8/spring-aspects-5.3.3.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/2.4.2/b61aa5408a80c4d0c0e5730b115066aaf90c61/spring-boot-starter-web-2.4.2.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-rest-webmvc/3.4.3/9db86872823f3651a2160bbf9a5f862108241950/spring-data-rest-webmvc-3.4.3.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.springframework.hateoas/spring-hateoas/1.2.3/876bf2424fd97e8d14e0352893b16431618238a9/spring-hateoas-1.2.3.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.30/b5a4b6d16ab13e34a88fae84c35cd5d68cac922c/slf4j-api-1.7.30.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/2.4.2/126908b151a4666ead4e10ce002dd3bf34c4e366/spring-boot-starter-2.4.2.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.3.3/d7b9366fd446a135fa0833249d6468dd2dda5b1a/spring-aop-5.3.3.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjweaver/1.9.6/ee3b73aa16df35179255f17354d9dfd8e7822835/aspectjweaver-1.9.6.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/com.zaxxer/HikariCP/3.4.5/aa1a2c00aae8e4ba8308e19940711bb9525b103d/HikariCP-3.4.5.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jdbc/5.3.3/b457d582d4a5d86eedc28a7ac774a3d9ddf209aa/spring-jdbc-5.3.3.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.hibernate.common/hibernate-commons-annotations/5.1.2.Final/e59ffdbc6ad09eeb33507b39ffcf287679a498c8/hibernate-commons-annotations-5.1.2.Final.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.4.1.Final/40fd4d696c55793e996d1ff3c475833f836c2498/jboss-logging-3.4.1.Final.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.27.0-GA/f63e6aa899e15eca8fdaa402a79af4c417252213/javassist-3.27.0-GA.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.10.19/7a8cf46cd99db76f02b335d53aad222d42bc412d/byte-buddy-1.10.19.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/antlr/antlr/2.7.7/83cd2cd674a217ade95a4bb83a8a14f351f48bd0/antlr-2.7.7.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.jboss/jandex/2.1.3.Final/cd56603e39eb1421560b71daa584348ecfd9e0b8/jandex-2.1.3.Final.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.5.1/3fe0bed568c62df5e89f4f174c101eab25345b6c/classmate-1.5.1.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.dom4j/dom4j/2.1.3/a75914155a9f5808963170ec20653668a2ffd2fd/dom4j-2.1.3.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.3/c46b68a6e3a2d84ba4eb14c6a8a1a9a7be4048bc/jaxb-runtime-2.3.3.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.4.3/3fdfe6ea486b5ca836563209b26032f424581cd9/spring-data-commons-2.4.3.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.3.3/991cb0e9ef7a641d78d12ea18e213124fed6e787/spring-context-5.3.3.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/5.3.3/2d8034e7982bd43ff7eaaa8a0ba30f31abf72410/spring-orm-5.3.3.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/5.3.3/db244edbb790ec24719e8eec635bd82b8ea24f62/spring-tx-5.3.3.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.3.3/855f38fc8b85901681495ac6c6379051ee688cd5/spring-beans-5.3.3.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.3.3/ea35bf756a880c699768ae0750e1244017d6ae84/spring-core-5.3.3.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.4.2/6e095374b6983b1ab6de64f392b6e7019bf58a04/spring-boot-starter-json-2.4.2.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.3.3/a88088cbd798d681d1e219e56896eaa067c925e1/spring-webmvc-5.3.3.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.3.3/9112880371d9ff888ee1248563df80eacbec7e14/spring-web-5.3.3.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/2.4.2/4a43bd6c0d41cf42cea7b84ffc9d1e6e0bd2f7b0/spring-boot-starter-tomcat-2.4.2.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-rest-core/3.4.3/588cfbf4d48f4be70a2d738e75282606224352e/spring-data-rest-core-3.4.3.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.11.4/5d9f3d441f99d721b957e3497f0a6465c764fad4/jackson-databind-2.11.4.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.11.4/2c3f5c079330f3a01726686a078979420f547ae4/jackson-annotations-2.11.4.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.springframework.plugin/spring-plugin-core/2.0.0.RELEASE/95fc8c13037630f4aba9c51141f535becec00fe6/spring-plugin-core-2.0.0.RELEASE.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/com.jayway.jsonpath/json-path/2.4.0/765a4401ceb2dc8d40553c2075eb80a8fa35c2ae/json-path-2.4.0.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.4.2/65e86c83ddfb08d8a8de9bd4a53e10578721b98f/spring-boot-autoconfigure-2.4.2.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.4.2/cefca979ab386988d4505b8346306d95fc3bddb8/spring-boot-2.4.2.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/jakarta.annotation/jakarta.annotation-api/1.3.5/59eb84ee0d616332ff44aba065f3888cf002cd2d/jakarta.annotation-api-1.3.5.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.27/359d62567480b07a679dc643f82fc926b100eed5/snakeyaml-1.27.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/jakarta.xml.bind/jakarta.xml.bind-api/2.3.3/48e3b9cfc10752fba3521d6511f4165bea951801/jakarta.xml.bind-api-2.3.3.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/txw2/2.3.3/12f70b0ea4fc1ad45315e842f63f7c9a46f46530/txw2-2.3.3.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/com.sun.istack/istack-commons-runtime/3.0.11/4293b5f4e4e89d598f62bb2ba73b32132e7c3a27/istack-commons-runtime-3.0.11.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/5.3.3/c98f680074d15abee6130a22683f5f5d8acdfa15/spring-expression-5.3.3.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.3.3/29b29ac8940bfa8b07f7678e24018cee12f66706/spring-jcl-5.3.3.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.11.4/e1540dea3c6c681ea4e335a960f730861ee3bedb/jackson-datatype-jdk8-2.11.4.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.11.4/ce6fc76bba06623720e5a9308386b6ae74753f4d/jackson-datatype-jsr310-2.11.4.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-parameter-names/2.11.4/432e050d79f2282a66c320375d628f1b0842cb12/jackson-module-parameter-names-2.11.4.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/9.0.41/b6e5fdc2a4088c340d0916468d7e2ecff71d83d/tomcat-embed-websocket-9.0.41.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.41/a43e9711e85073187d04b137882b4b7957180ef0/tomcat-embed-core-9.0.41.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.glassfish/jakarta.el/3.0.3/dab46ee1ee23f7197c13d7c40fce14817c9017df/jakarta.el-3.0.3.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.atteo/evo-inflector/1.2.2/2551aad98d65ac5464d81fe05f0e1516cfe471c9/evo-inflector-1.2.2.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.11.4/593f7b18bab07a76767f181e2a2336135ce82cc4/jackson-core-2.11.4.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/net.minidev/json-smart/2.3/7396407491352ce4fa30de92efb158adb76b5b/json-smart-2.3.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/net.minidev/accessors-smart/1.2/c592b500269bfde36096641b01238a8350f8aa31/accessors-smart-1.2.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/5.0.4/da08b8cce7bbf903602a25a3a163ae252435795/asm-5.0.4.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-devtools/2.4.2/ec2d5d1d6684d1e817db60e4066e8b6581defeae/spring-boot-devtools-2.4.2.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.postgresql/postgresql/42.2.18/a0a9c1d43c7727eeaf1b729477891185d3c71751/postgresql-42.2.18.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.5.0/2f50520c8abea66fbd8d26e481d3aef5c673b510/checker-qual-3.5.0.jar:/Users/mvenclu/.gradle/caches/modules-2/files-2.1/com.sun.activation/jakarta.activation/1.2.2/74548703f9851017ce2f556066659438019e7eb5/jakarta.activation-1.2.2.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, java.vendor.url=http://java.oracle.com/, catalina.useNaming=false, user.timezone=Europe/Prague, os.name=Mac OS X, java.vm.specification.version=11, javax.persistence.validation.mode=AUTO, sun.java.launcher=SUN_STANDARD, user.country=GB, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib, sun.java.command=cz.cvut.fel.omo.simpleblockchain.SimpleBlockchainApplication, spring.application.admin.enabled=true, javax.persistence.nonJtaDataSource=HikariDataSource (HikariPool-1), hibernate.transaction.jta.platform=org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform@a6d9610, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, com.sun.management.jmxremote=, javax.persistence.sharedCache.mode=UNSPECIFIED, jdk.debug=release, spring.liveBeansView.mbeanDomain=, sun.cpu.endian=little, user.home=/Users/mvenclu, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2018-10-16, java.home=/Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home, file.separator=/, spring.output.ansi.enabled=always, java.vm.compressedOopsMode=Zero based, line.separator=
+, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, FILE_LOG_CHARSET=UTF-8, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, java.awt.headless=true, hibernate.hbm2ddl.auto=create-drop, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, java.runtime.version=11.0.1+13-LTS, user.name=mvenclu, spring.jmx.enabled=true, path.separator=:, os.version=10.15.7, java.runtime.name=Java(TM) SE Runtime Environment, file.encoding=UTF-8, hibernate.ejb.persistenceUnitName=default, spring.beaninfo.ignore=true, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, java.vendor.version=18.9, java.vendor.url.bug=http://bugreport.java.com/bugreport/, java.io.tmpdir=/var/folders/66/bl6jyk6d13s97skypb48yw5r0000gn/T/, catalina.home=/private/var/folders/66/bl6jyk6d13s97skypb48yw5r0000gn/T/tomcat.8080.18183749880012768734, java.version=11.0.1, hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy, user.dir=/Users/mvenclu/Documents/CVUT/aktualniSemestr/OMO/GitLab/omo/semestralka, os.arch=x86_64, java.vm.specification.name=Java Virtual Machine Specification, PID=20578, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, sun.os.patch.level=unknown, CONSOLE_LOG_CHARSET=UTF-8, catalina.base=/private/var/folders/66/bl6jyk6d13s97skypb48yw5r0000gn/T/tomcat.8080.18183749880012768734, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.registry.StandardServiceRegistryBuilder$1@54863ef7, java.library.path=/Users/mvenclu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=11.0.1+13-LTS, hibernate.bytecode.use_reflection_optimizer=false, java.rmi.server.randomIDs=true, sun.io.unicode.encoding=UnicodeBig, hibernate.archive.scanner=org.hibernate.boot.archive.scan.internal.DisabledScanner, hibernate.connection.datasource=HikariDataSource (HikariPool-1), socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, java.class.version=55.0}
+2021-02-08 11:00:18,745 DEBUG o.h.s.s.JaccIntegrator [restartedMain] Skipping JACC integration as it was not enabled
+2021-02-08 11:00:18,751 DEBUG o.h.i.SessionFactoryImpl [restartedMain] Instantiated session factory
+2021-02-08 11:00:18,751 DEBUG o.h.t.s.TypeConfiguration$Scope [restartedMain] Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@7c4a8ba6] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@4dad35fa]
+2021-02-08 11:00:18,811 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-08 11:00:18,812 DEBUG o.h.q.s.NamedQueryRepository [restartedMain] Checking 0 named HQL queries
+2021-02-08 11:00:18,812 DEBUG o.h.q.s.NamedQueryRepository [restartedMain] Checking 0 named SQL queries
+2021-02-08 11:00:18,842 DEBUG o.h.i.SessionFactoryRegistry [restartedMain] Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@346ae520
+2021-02-08 11:00:18,842 DEBUG o.h.i.SessionFactoryRegistry [restartedMain] Registering SessionFactory: e3e9efc1-5e03-4aa8-97ad-e7601e698f22 (<unnamed>)
+2021-02-08 11:00:18,842 DEBUG o.h.i.SessionFactoryRegistry [restartedMain] Not binding SessionFactory to JNDI, no JNDI name configured
+2021-02-08 11:00:18,844 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-08 11:00:18,851 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'springApplicationAdminRegistrar'
+2021-02-08 11:00:18,851 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration'
+2021-02-08 11:00:18,853 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'springApplicationAdminRegistrar' via factory method to bean named 'environment'
+2021-02-08 11:00:18,854 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'mbeanExporter'
+2021-02-08 11:00:18,854 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration'
+2021-02-08 11:00:18,855 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' via constructor to bean named 'environment'
+2021-02-08 11:00:18,857 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'objectNamingStrategy'
+2021-02-08 11:00:18,862 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'mbeanExporter' via factory method to bean named 'objectNamingStrategy'
+2021-02-08 11:00:18,862 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'mbeanExporter' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@199855dd'
+2021-02-08 11:00:18,867 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'mbeanServer'
+2021-02-08 11:00:18,869 DEBUG o.s.j.s.JmxUtils [restartedMain] Found MBeanServer: com.sun.jmx.mbeanserver.JmxMBeanServer@51e2adc7
+2021-02-08 11:00:18,892 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'liveReloadServerEventListener'
+2021-02-08 11:00:18,892 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$LiveReloadConfiguration'
+2021-02-08 11:00:18,894 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'optionalLiveReloadServer'
+2021-02-08 11:00:18,896 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'spring.devtools-org.springframework.boot.devtools.autoconfigure.DevToolsProperties'
+2021-02-08 11:00:18,899 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'liveReloadServer' via factory method to bean named 'spring.devtools-org.springframework.boot.devtools.autoconfigure.DevToolsProperties'
+2021-02-08 11:00:18,901 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'optionalLiveReloadServer' via factory method to bean named 'liveReloadServer'
+2021-02-08 11:00:18,904 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'liveReloadServerEventListener' via factory method to bean named 'optionalLiveReloadServer'
+2021-02-08 11:00:18,907 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'simpleBlockchainApplication'
+2021-02-08 11:00:18,910 DEBUG o.s.b.CachedIntrospectionResults [restartedMain] Not strongly caching class [cz.cvut.fel.omo.simpleblockchain.SimpleBlockchainApplication$$EnhancerBySpringCGLIB$$b5343e7a] because it is not cache-safe
+2021-02-08 11:00:18,911 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'
+2021-02-08 11:00:18,914 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration'
+2021-02-08 11:00:18,915 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.context.properties.EnableConfigurationPropertiesRegistrar.methodValidationExcludeFilter'
+2021-02-08 11:00:18,918 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration'
+2021-02-08 11:00:18,919 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration'
+2021-02-08 11:00:18,921 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'taskExecutorBuilder'
+2021-02-08 11:00:18,957 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
+2021-02-08 11:00:18,974 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'taskExecutorBuilder' via factory method to bean named 'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
+2021-02-08 11:00:18,983 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration'
+2021-02-08 11:00:18,987 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'error'
+2021-02-08 11:00:18,993 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'beanNameViewResolver'
+2021-02-08 11:00:19,000 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration'
+2021-02-08 11:00:19,002 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties'
+2021-02-08 11:00:19,018 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+2021-02-08 11:00:19,034 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@527afe2a'
+2021-02-08 11:00:19,034 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration' via constructor to bean named 'spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties'
+2021-02-08 11:00:19,035 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration' via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+2021-02-08 11:00:19,038 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'conventionErrorViewResolver'
+2021-02-08 11:00:19,042 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'errorAttributes'
+2021-02-08 11:00:19,045 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'basicErrorController'
+2021-02-08 11:00:19,046 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'basicErrorController' via factory method to bean named 'errorAttributes'
+2021-02-08 11:00:19,051 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration'
+2021-02-08 11:00:19,054 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties'
+2021-02-08 11:00:19,054 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+2021-02-08 11:00:19,054 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+2021-02-08 11:00:19,054 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@199855dd'
+2021-02-08 11:00:19,061 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter'
+2021-02-08 11:00:19,062 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+2021-02-08 11:00:19,062 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+2021-02-08 11:00:19,062 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@199855dd'
+2021-02-08 11:00:19,065 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'openEntityManagerInViewInterceptorConfigurer'
+2021-02-08 11:00:19,065 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration'
+2021-02-08 11:00:19,066 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration' via constructor to bean named 'spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties'
+2021-02-08 11:00:19,067 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'openEntityManagerInViewInterceptor'
+2021-02-08 11:00:19,074 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'openEntityManagerInViewInterceptorConfigurer' via factory method to bean named 'openEntityManagerInViewInterceptor'
+2021-02-08 11:00:19,076 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'hypermediaWebMvcConfigurer'
+2021-02-08 11:00:19,076 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.hateoas.config.WebMvcHateoasConfiguration'
+2021-02-08 11:00:19,077 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'hypermediaWebMvcConverters'
+2021-02-08 11:00:19,078 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.hateoas.mediatype.hal.HalMediaTypeConfiguration'
+2021-02-08 11:00:19,079 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.hateoas.mediatype.hal.HalMediaTypeConfiguration' via constructor to bean named '_relProvider'
+2021-02-08 11:00:19,079 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.hateoas.mediatype.hal.HalMediaTypeConfiguration' via constructor to bean named 'messageResolver'
+2021-02-08 11:00:19,079 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.hateoas.mediatype.hal.HalMediaTypeConfiguration' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@199855dd'
+2021-02-08 11:00:19,081 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'hypermediaWebMvcConverters' via factory method to bean named 'org.springframework.hateoas.mediatype.hal.HalMediaTypeConfiguration'
+2021-02-08 11:00:19,096 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'hypermediaWebMvcConfigurer' via factory method to bean named 'hypermediaWebMvcConverters'
+2021-02-08 11:00:19,099 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'requestMappingHandlerAdapter'
+2021-02-08 11:00:19,100 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'mvcContentNegotiationManager'
+2021-02-08 11:00:19,107 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'mvcConversionService'
+2021-02-08 11:00:19,109 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'jsonSchemaConverter'
+2021-02-08 11:00:19,110 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'persistentEntities'
+2021-02-08 11:00:19,111 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'jpaMappingContext'
+2021-02-08 11:00:19,115 DEBUG o.s.d.j.r.c.JpaMetamodelMappingContextFactoryBean [restartedMain] Initializing JpaMetamodelMappingContext…
+2021-02-08 11:00:19,127 DEBUG o.s.d.j.r.c.JpaMetamodelMappingContextFactoryBean [restartedMain] Finished initializing JpaMetamodelMappingContext!
+2021-02-08 11:00:19,157 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'associationLinks'
+2021-02-08 11:00:19,159 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'resourceMappings'
+2021-02-08 11:00:19,160 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'repositories'
+2021-02-08 11:00:19,175 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'repositoryRestConfiguration'
+2021-02-08 11:00:19,218 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'resourceMappings' via factory method to bean named 'repositories'
+2021-02-08 11:00:19,218 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'resourceMappings' via factory method to bean named 'persistentEntities'
+2021-02-08 11:00:19,218 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'resourceMappings' via factory method to bean named 'repositoryRestConfiguration'
+2021-02-08 11:00:19,234 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'associationLinks' via factory method to bean named 'resourceMappings'
+2021-02-08 11:00:19,234 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'associationLinks' via factory method to bean named 'repositoryRestConfiguration'
+2021-02-08 11:00:19,240 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'repositoryInvokerFactory'
+2021-02-08 11:00:19,244 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'jsonSchemaConverter' via factory method to bean named 'persistentEntities'
+2021-02-08 11:00:19,244 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'jsonSchemaConverter' via factory method to bean named 'associationLinks'
+2021-02-08 11:00:19,244 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'jsonSchemaConverter' via factory method to bean named 'repositoryInvokerFactory'
+2021-02-08 11:00:19,245 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'jsonSchemaConverter' via factory method to bean named 'repositoryRestConfiguration'
+2021-02-08 11:00:19,251 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'linkCollector'
+2021-02-08 11:00:19,251 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'selfLinkProvider'
+2021-02-08 11:00:19,252 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'entityLinks'
+2021-02-08 11:00:19,252 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'pageableResolver'
+2021-02-08 11:00:19,255 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'sortResolver'
+2021-02-08 11:00:19,267 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'backendIdConverterRegistry'
+2021-02-08 11:00:19,273 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'entityLinks' via factory method to bean named 'pageableResolver'
+2021-02-08 11:00:19,273 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'entityLinks' via factory method to bean named 'repositories'
+2021-02-08 11:00:19,273 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'entityLinks' via factory method to bean named 'resourceMappings'
+2021-02-08 11:00:19,273 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'entityLinks' via factory method to bean named 'backendIdConverterRegistry'
+2021-02-08 11:00:19,273 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'entityLinks' via factory method to bean named 'repositoryRestConfiguration'
+2021-02-08 11:00:19,273 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'entityLinks' via factory method to bean named 'sortResolver'
+2021-02-08 11:00:19,278 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'selfLinkProvider' via factory method to bean named 'persistentEntities'
+2021-02-08 11:00:19,278 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'selfLinkProvider' via factory method to bean named 'entityLinks'
+2021-02-08 11:00:19,280 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'linkCollector' via factory method to bean named 'persistentEntities'
+2021-02-08 11:00:19,280 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'linkCollector' via factory method to bean named 'selfLinkProvider'
+2021-02-08 11:00:19,280 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'linkCollector' via factory method to bean named 'associationLinks'
+2021-02-08 11:00:19,282 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'excerptProjector'
+2021-02-08 11:00:19,282 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'excerptProjector' via factory method to bean named 'resourceMappings'
+2021-02-08 11:00:19,295 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'representationModelProcessorInvoker'
+2021-02-08 11:00:19,297 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'profileResourceProcessor'
+2021-02-08 11:00:19,297 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'profileResourceProcessor' via factory method to bean named 'repositoryRestConfiguration'
+2021-02-08 11:00:19,299 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'representationModelProcessorInvoker' via factory method to bean named 'profileResourceProcessor'
+2021-02-08 11:00:19,317 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'mvcValidator'
+2021-02-08 11:00:19,320 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcContentNegotiationManager'
+2021-02-08 11:00:19,320 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcConversionService'
+2021-02-08 11:00:19,320 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcValidator'
+2021-02-08 11:00:19,323 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcContentNegotiationManager'
+2021-02-08 11:00:19,323 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcConversionService'
+2021-02-08 11:00:19,323 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcValidator'
+2021-02-08 11:00:19,335 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'messageConverters'
+2021-02-08 11:00:19,336 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration'
+2021-02-08 11:00:19,347 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'jacksonHttpMessageConverter'
+2021-02-08 11:00:19,348 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'jacksonHttpMessageConverter' via factory method to bean named 'repositoryRestConfiguration'
+2021-02-08 11:00:19,377 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'halJacksonHttpMessageConverter'
+2021-02-08 11:00:19,378 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'halJacksonHttpMessageConverter' via factory method to bean named 'linkCollector'
+2021-02-08 11:00:19,378 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'halJacksonHttpMessageConverter' via factory method to bean named 'repositoryRestConfiguration'
+2021-02-08 11:00:19,384 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'uriListHttpMessageConverter'
+2021-02-08 11:00:19,387 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'alpsJsonHttpMessageConverter'
+2021-02-08 11:00:19,389 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'alpsConverter'
+2021-02-08 11:00:19,392 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'enumTranslator'
+2021-02-08 11:00:19,393 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'enumTranslator' via factory method to bean named 'messageResolver'
+2021-02-08 11:00:19,397 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'alpsConverter' via factory method to bean named 'repositories'
+2021-02-08 11:00:19,397 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'alpsConverter' via factory method to bean named 'persistentEntities'
+2021-02-08 11:00:19,397 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'alpsConverter' via factory method to bean named 'entityLinks'
+2021-02-08 11:00:19,397 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'alpsConverter' via factory method to bean named 'enumTranslator'
+2021-02-08 11:00:19,397 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'alpsConverter' via factory method to bean named 'associationLinks'
+2021-02-08 11:00:19,398 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'alpsConverter' via factory method to bean named 'repositoryRestConfiguration'
+2021-02-08 11:00:19,407 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'alpsJsonHttpMessageConverter' via factory method to bean named 'alpsConverter'
+2021-02-08 11:00:19,451 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'pagedResourcesAssemblerArgumentResolver'
+2021-02-08 11:00:19,454 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'applicationTaskExecutor'
+2021-02-08 11:00:19,455 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'applicationTaskExecutor' via factory method to bean named 'taskExecutorBuilder'
+2021-02-08 11:00:19,465 INFO o.s.s.c.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-08 11:00:19,485 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-02-08 11:00:19,502 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'requestMappingHandlerMapping'
+2021-02-08 11:00:19,503 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'mvcResourceUrlProvider'
+2021-02-08 11:00:19,505 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'restHandlerMapping'
+2021-02-08 11:00:19,506 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'jpaHelper'
+2021-02-08 11:00:19,508 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'restHandlerMapping' via factory method to bean named 'repositories'
+2021-02-08 11:00:19,508 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'restHandlerMapping' via factory method to bean named 'resourceMappings'
+2021-02-08 11:00:19,508 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'restHandlerMapping' via factory method to bean named 'repositoryRestConfiguration'
+2021-02-08 11:00:19,584 DEBUG o.s.d.r.w.RepositoryRestHandlerMapping [restartedMain] 27 mappings in <unknown>
+2021-02-08 11:00:19,591 DEBUG o.s.d.r.w.BasePathAwareHandlerMapping [restartedMain] 5 mappings in <unknown>
+2021-02-08 11:00:19,622 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager'
+2021-02-08 11:00:19,622 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcConversionService'
+2021-02-08 11:00:19,622 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2021-02-08 11:00:19,626 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager'
+2021-02-08 11:00:19,626 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcConversionService'
+2021-02-08 11:00:19,626 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2021-02-08 11:00:19,646 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping [restartedMain] 2 mappings in 'requestMappingHandlerMapping'
+2021-02-08 11:00:19,647 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'welcomePageHandlerMapping'
+2021-02-08 11:00:19,648 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@527afe2a'
+2021-02-08 11:00:19,648 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'mvcConversionService'
+2021-02-08 11:00:19,648 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2021-02-08 11:00:19,649 DEBUG o.s.c.e.PropertySourcesPropertyResolver [restartedMain] Found key 'spring.template.provider.cache' in PropertySource 'configurationProperties' with value of type String
+2021-02-08 11:00:19,659 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'localeResolver'
+2021-02-08 11:00:19,661 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'themeResolver'
+2021-02-08 11:00:19,663 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'flashMapManager'
+2021-02-08 11:00:19,667 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'mvcUrlPathHelper'
+2021-02-08 11:00:19,668 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'mvcPathMatcher'
+2021-02-08 11:00:19,670 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'viewControllerHandlerMapping'
+2021-02-08 11:00:19,670 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcConversionService'
+2021-02-08 11:00:19,671 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2021-02-08 11:00:19,672 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'beanNameHandlerMapping'
+2021-02-08 11:00:19,672 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'beanNameHandlerMapping' via factory method to bean named 'mvcConversionService'
+2021-02-08 11:00:19,672 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'beanNameHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2021-02-08 11:00:19,681 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'routerFunctionMapping'
+2021-02-08 11:00:19,682 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'routerFunctionMapping' via factory method to bean named 'mvcConversionService'
+2021-02-08 11:00:19,682 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'routerFunctionMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2021-02-08 11:00:19,689 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'resourceHandlerMapping'
+2021-02-08 11:00:19,690 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager'
+2021-02-08 11:00:19,690 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcConversionService'
+2021-02-08 11:00:19,690 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2021-02-08 11:00:19,702 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-02-08 11:00:19,703 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'defaultServletHandlerMapping'
+2021-02-08 11:00:19,704 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'handlerFunctionAdapter'
+2021-02-08 11:00:19,706 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'mvcUriComponentsContributor'
+2021-02-08 11:00:19,707 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'mvcUriComponentsContributor' via factory method to bean named 'mvcConversionService'
+2021-02-08 11:00:19,707 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'mvcUriComponentsContributor' via factory method to bean named 'requestMappingHandlerAdapter'
+2021-02-08 11:00:19,709 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'httpRequestHandlerAdapter'
+2021-02-08 11:00:19,710 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'simpleControllerHandlerAdapter'
+2021-02-08 11:00:19,712 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'handlerExceptionResolver'
+2021-02-08 11:00:19,712 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'handlerExceptionResolver' via factory method to bean named 'mvcContentNegotiationManager'
+2021-02-08 11:00:19,716 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-02-08 11:00:19,719 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'persistentEntityArgumentResolver'
+2021-02-08 11:00:19,721 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'defaultMessageConverters'
+2021-02-08 11:00:19,723 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'defaultMessageConverters' via factory method to bean named 'jacksonHttpMessageConverter'
+2021-02-08 11:00:19,723 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'defaultMessageConverters' via factory method to bean named 'halJacksonHttpMessageConverter'
+2021-02-08 11:00:19,723 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'defaultMessageConverters' via factory method to bean named 'alpsJsonHttpMessageConverter'
+2021-02-08 11:00:19,723 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'defaultMessageConverters' via factory method to bean named 'uriListHttpMessageConverter'
+2021-02-08 11:00:19,724 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'defaultMessageConverters' via factory method to bean named 'configurerDelegate'
+2021-02-08 11:00:19,724 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'defaultMessageConverters' via factory method to bean named 'repositoryRestConfiguration'
+2021-02-08 11:00:19,730 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'repoRequestArgumentResolver'
+2021-02-08 11:00:19,731 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'resourceMetadataHandlerMethodArgumentResolver'
+2021-02-08 11:00:19,731 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'baseUri'
+2021-02-08 11:00:19,732 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'baseUri' via factory method to bean named 'repositoryRestConfiguration'
+2021-02-08 11:00:19,733 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'resourceMetadataHandlerMethodArgumentResolver' via factory method to bean named 'repositories'
+2021-02-08 11:00:19,733 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'resourceMetadataHandlerMethodArgumentResolver' via factory method to bean named 'resourceMappings'
+2021-02-08 11:00:19,733 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'resourceMetadataHandlerMethodArgumentResolver' via factory method to bean named 'baseUri'
+2021-02-08 11:00:19,735 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'repoRequestArgumentResolver' via factory method to bean named 'repositories'
+2021-02-08 11:00:19,735 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'repoRequestArgumentResolver' via factory method to bean named 'resourceMetadataHandlerMethodArgumentResolver'
+2021-02-08 11:00:19,735 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'repoRequestArgumentResolver' via factory method to bean named 'repositoryInvokerFactory'
+2021-02-08 11:00:19,737 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'backendIdHandlerMethodArgumentResolver'
+2021-02-08 11:00:19,737 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'backendIdHandlerMethodArgumentResolver' via factory method to bean named 'backendIdConverterRegistry'
+2021-02-08 11:00:19,737 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'backendIdHandlerMethodArgumentResolver' via factory method to bean named 'resourceMetadataHandlerMethodArgumentResolver'
+2021-02-08 11:00:19,738 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'backendIdHandlerMethodArgumentResolver' via factory method to bean named 'baseUri'
+2021-02-08 11:00:19,739 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'persistentEntityArgumentResolver' via factory method to bean named 'defaultMessageConverters'
+2021-02-08 11:00:19,739 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'persistentEntityArgumentResolver' via factory method to bean named 'repoRequestArgumentResolver'
+2021-02-08 11:00:19,739 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'persistentEntityArgumentResolver' via factory method to bean named 'associationLinks'
+2021-02-08 11:00:19,739 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'persistentEntityArgumentResolver' via factory method to bean named 'backendIdHandlerMethodArgumentResolver'
+2021-02-08 11:00:19,739 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'persistentEntityArgumentResolver' via factory method to bean named 'persistentEntities'
+2021-02-08 11:00:19,744 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'serverHttpRequestMethodArgumentResolver'
+2021-02-08 11:00:19,747 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'eTagArgumentResolver'
+2021-02-08 11:00:19,751 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'mvcViewResolver'
+2021-02-08 11:00:19,751 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'mvcViewResolver' via factory method to bean named 'mvcContentNegotiationManager'
+2021-02-08 11:00:19,755 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'viewNameTranslator'
+2021-02-08 11:00:19,757 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'defaultViewResolver'
+2021-02-08 11:00:19,765 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'viewResolver'
+2021-02-08 11:00:19,766 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'viewResolver' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@199855dd'
+2021-02-08 11:00:19,771 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$AspectJAutoProxyingConfiguration$CglibAutoProxyConfiguration'
+2021-02-08 11:00:19,772 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$AspectJAutoProxyingConfiguration'
+2021-02-08 11:00:19,773 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration'
+2021-02-08 11:00:19,774 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.availability.ApplicationAvailabilityAutoConfiguration'
+2021-02-08 11:00:19,775 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'applicationAvailability'
+2021-02-08 11:00:19,777 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.jta.JtaAutoConfiguration'
+2021-02-08 11:00:19,778 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceJmxConfiguration$Hikari'
+2021-02-08 11:00:19,779 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceJmxConfiguration$Hikari' via constructor to bean named 'dataSource'
+2021-02-08 11:00:19,780 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceJmxConfiguration'
+2021-02-08 11:00:19,782 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$PooledDataSourceConfiguration'
+2021-02-08 11:00:19,782 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration'
+2021-02-08 11:00:19,783 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializationConfiguration'
+2021-02-08 11:00:19,784 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration'
+2021-02-08 11:00:19,785 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'transactionManager'
+2021-02-08 11:00:19,787 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'platformTransactionManagerCustomizers'
+2021-02-08 11:00:19,787 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration'
+2021-02-08 11:00:19,789 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties'
+2021-02-08 11:00:19,808 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.orm.jpa.DataSourceInitializedPublisher$DataSourceInitializationCompletionListener'
+2021-02-08 11:00:19,813 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration'
+2021-02-08 11:00:19,814 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration'
+2021-02-08 11:00:19,815 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.LifecycleAutoConfiguration'
+2021-02-08 11:00:19,816 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'lifecycleProcessor'
+2021-02-08 11:00:19,816 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'spring.lifecycle-org.springframework.boot.autoconfigure.context.LifecycleProperties'
+2021-02-08 11:00:19,818 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'lifecycleProcessor' via factory method to bean named 'spring.lifecycle-org.springframework.boot.autoconfigure.context.LifecycleProperties'
+2021-02-08 11:00:19,827 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.dao.PersistenceExceptionTranslationAutoConfiguration'
+2021-02-08 11:00:19,829 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration'
+2021-02-08 11:00:19,830 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.data.jpa.util.JpaMetamodelCacheCleanup'
+2021-02-08 11:00:19,831 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.data.jpa.repository.support.JpaEvaluationContextExtension'
+2021-02-08 11:00:19,843 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration'
+2021-02-08 11:00:19,844 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'gsonBuilder'
+2021-02-08 11:00:19,845 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'standardGsonBuilderCustomizer'
+2021-02-08 11:00:19,846 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'spring.gson-org.springframework.boot.autoconfigure.gson.GsonProperties'
+2021-02-08 11:00:19,859 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'standardGsonBuilderCustomizer' via factory method to bean named 'spring.gson-org.springframework.boot.autoconfigure.gson.GsonProperties'
+2021-02-08 11:00:19,867 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'gsonBuilder' via factory method to bean named 'standardGsonBuilderCustomizer'
+2021-02-08 11:00:19,883 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'gson'
+2021-02-08 11:00:19,884 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'gson' via factory method to bean named 'gsonBuilder'
+2021-02-08 11:00:19,911 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration'
+2021-02-08 11:00:19,912 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.GsonHttpMessageConvertersConfiguration'
+2021-02-08 11:00:19,913 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'halLinkDisocoverer'
+2021-02-08 11:00:19,916 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'defaultRelProvider'
+2021-02-08 11:00:19,919 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'annotationRelProvider'
+2021-02-08 11:00:19,922 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'linkDiscoverers'
+2021-02-08 11:00:19,922 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'linkDiscovererRegistry'
+2021-02-08 11:00:19,926 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'linkDiscoverers' via factory method to bean named 'linkDiscovererRegistry'
+2021-02-08 11:00:19,927 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.hateoas.config.WebMvcEntityLinksConfiguration'
+2021-02-08 11:00:19,929 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'webMvcEntityLinks'
+2021-02-08 11:00:19,930 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'webMvcLinkBuilderFactory'
+2021-02-08 11:00:19,943 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'entityLinksPluginRegistry'
+2021-02-08 11:00:19,943 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'delegatingEntityLinks'
+2021-02-08 11:00:19,944 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'delegatingEntityLinks' via factory method to bean named 'entityLinksPluginRegistry'
+2021-02-08 11:00:19,946 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.hateoas.config.RestTemplateHateoasConfiguration'
+2021-02-08 11:00:19,947 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.data.rest.webmvc.RestControllerConfiguration'
+2021-02-08 11:00:19,949 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'pagedResourcesAssembler'
+2021-02-08 11:00:19,951 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.data.rest.webmvc.RestControllerConfiguration' via constructor to bean named 'repositoryRestConfiguration'
+2021-02-08 11:00:19,951 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.data.rest.webmvc.RestControllerConfiguration' via constructor to bean named 'resourceMappings'
+2021-02-08 11:00:19,951 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.data.rest.webmvc.RestControllerConfiguration' via constructor to bean named 'pagedResourcesAssembler'
+2021-02-08 11:00:19,951 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.data.rest.webmvc.RestControllerConfiguration' via constructor to bean named 'repositories'
+2021-02-08 11:00:19,953 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'repositoryController'
+2021-02-08 11:00:19,954 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'repositoryController' via factory method to bean named 'delegatingEntityLinks'
+2021-02-08 11:00:19,956 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'repositoryEntityController'
+2021-02-08 11:00:19,957 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'httpHeadersPreparer'
+2021-02-08 11:00:19,958 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'auditableBeanWrapperFactory'
+2021-02-08 11:00:19,958 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'auditableBeanWrapperFactory' via factory method to bean named 'persistentEntities'
+2021-02-08 11:00:19,967 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'httpHeadersPreparer' via factory method to bean named 'auditableBeanWrapperFactory'
+2021-02-08 11:00:19,969 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'repositoryEntityController' via factory method to bean named 'entityLinks'
+2021-02-08 11:00:19,969 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'repositoryEntityController' via factory method to bean named 'httpHeadersPreparer'
+2021-02-08 11:00:19,972 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'repositoryPropertyReferenceController'
+2021-02-08 11:00:19,973 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'repositoryPropertyReferenceController' via factory method to bean named 'repositoryInvokerFactory'
+2021-02-08 11:00:19,976 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'repositorySearchController'
+2021-02-08 11:00:19,976 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'repositorySearchController' via factory method to bean named 'entityLinks'
+2021-02-08 11:00:19,976 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'repositorySearchController' via factory method to bean named 'httpHeadersPreparer'
+2021-02-08 11:00:19,978 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'repositorySchemaController'
+2021-02-08 11:00:19,979 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'repositorySchemaController' via factory method to bean named 'jsonSchemaConverter'
+2021-02-08 11:00:19,980 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'alpsController'
+2021-02-08 11:00:19,981 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'profileController'
+2021-02-08 11:00:19,982 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'repositoryRelProvider'
+2021-02-08 11:00:19,984 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'defaultConversionService'
+2021-02-08 11:00:19,984 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'defaultConversionService' via factory method to bean named 'persistentEntities'
+2021-02-08 11:00:19,985 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'defaultConversionService' via factory method to bean named 'repositoryInvokerFactory'
+2021-02-08 11:00:19,985 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'defaultConversionService' via factory method to bean named 'repositories'
+2021-02-08 11:00:19,985 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'defaultConversionService' via factory method to bean named 'configurerDelegate'
+2021-02-08 11:00:19,990 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'validatingRepositoryEventListener'
+2021-02-08 11:00:19,990 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'validatingRepositoryEventListener' via factory method to bean named 'configurerDelegate'
+2021-02-08 11:00:19,995 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'metadataConfiguration'
+2021-02-08 11:00:20,002 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'repositoryExporterHandlerAdapter'
+2021-02-08 11:00:20,007 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'repositoryExporterHandlerAdapter' via factory method to bean named 'defaultMessageConverters'
+2021-02-08 11:00:20,007 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'repositoryExporterHandlerAdapter' via factory method to bean named 'alpsJsonHttpMessageConverter'
+2021-02-08 11:00:20,007 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'repositoryExporterHandlerAdapter' via factory method to bean named 'selfLinkProvider'
+2021-02-08 11:00:20,007 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'repositoryExporterHandlerAdapter' via factory method to bean named 'persistentEntityArgumentResolver'
+2021-02-08 11:00:20,007 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'repositoryExporterHandlerAdapter' via factory method to bean named 'repoRequestArgumentResolver'
+2021-02-08 11:00:20,007 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'repositoryExporterHandlerAdapter' via factory method to bean named 'repositoryRestConfiguration'
+2021-02-08 11:00:20,031 DEBUG o.s.d.r.w.RepositoryRestHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 0 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-02-08 11:00:20,036 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'repositoryRestExceptionHandler'
+2021-02-08 11:00:20,044 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.hateoas.HypermediaHttpMessageConverterConfiguration'
+2021-02-08 11:00:20,046 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'halMessageConverterSupportedMediaTypeCustomizer'
+2021-02-08 11:00:20,056 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration'
+2021-02-08 11:00:20,058 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'spring.hateoas-org.springframework.boot.autoconfigure.hateoas.HateoasProperties'
+2021-02-08 11:00:20,063 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration'
+2021-02-08 11:00:20,067 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+2021-02-08 11:00:20,069 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration' via constructor to bean named 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+2021-02-08 11:00:20,074 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateConfiguration'
+2021-02-08 11:00:20,079 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'jdbcTemplate'
+2021-02-08 11:00:20,080 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'spring.jdbc-org.springframework.boot.autoconfigure.jdbc.JdbcProperties'
+2021-02-08 11:00:20,082 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'jdbcTemplate' via factory method to bean named 'dataSource'
+2021-02-08 11:00:20,082 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'jdbcTemplate' via factory method to bean named 'spring.jdbc-org.springframework.boot.autoconfigure.jdbc.JdbcProperties'
+2021-02-08 11:00:20,104 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.NamedParameterJdbcTemplateConfiguration'
+2021-02-08 11:00:20,107 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'namedParameterJdbcTemplate'
+2021-02-08 11:00:20,107 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'namedParameterJdbcTemplate' via factory method to bean named 'jdbcTemplate'
+2021-02-08 11:00:20,113 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration'
+2021-02-08 11:00:20,114 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskSchedulingAutoConfiguration'
+2021-02-08 11:00:20,116 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'taskSchedulerBuilder'
+2021-02-08 11:00:20,117 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
+2021-02-08 11:00:20,119 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'taskSchedulerBuilder' via factory method to bean named 'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
+2021-02-08 11:00:20,121 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration'
+2021-02-08 11:00:20,123 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration'
+2021-02-08 11:00:20,124 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration$CglibAutoProxyConfiguration'
+2021-02-08 11:00:20,126 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration'
+2021-02-08 11:00:20,128 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$TransactionTemplateConfiguration'
+2021-02-08 11:00:20,129 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'transactionTemplate'
+2021-02-08 11:00:20,129 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'transactionTemplate' via factory method to bean named 'transactionManager'
+2021-02-08 11:00:20,133 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.client.RestTemplateAutoConfiguration'
+2021-02-08 11:00:20,134 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration'
+2021-02-08 11:00:20,135 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'multipartResolver'
+2021-02-08 11:00:20,137 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartConfiguration'
+2021-02-08 11:00:20,138 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartConfiguration' via constructor to bean named 'spring.devtools-org.springframework.boot.devtools.autoconfigure.DevToolsProperties'
+2021-02-08 11:00:20,139 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'restartingClassPathChangedEventListener'
+2021-02-08 11:00:20,139 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'fileSystemWatcherFactory'
+2021-02-08 11:00:20,141 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'restartingClassPathChangedEventListener' via factory method to bean named 'fileSystemWatcherFactory'
+2021-02-08 11:00:20,142 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'classPathFileSystemWatcher'
+2021-02-08 11:00:20,143 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'classPathRestartStrategy'
+2021-02-08 11:00:20,145 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'classPathFileSystemWatcher' via factory method to bean named 'fileSystemWatcherFactory'
+2021-02-08 11:00:20,145 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Autowiring by type from bean name 'classPathFileSystemWatcher' via factory method to bean named 'classPathRestartStrategy'
+2021-02-08 11:00:20,159 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'conditionEvaluationDeltaLoggingListener'
+2021-02-08 11:00:20,162 DEBUG o.s.b.f.s.DefaultListableBeanFactory [restartedMain] Creating shared instance of singleton bean 'org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration'
+2021-02-08 11:00:20,174 DEBUG o.s.j.e.a.AnnotationMBeanExporter [restartedMain] Registering beans for JMX exposure on startup
+2021-02-08 11:00:20,174 DEBUG o.s.j.e.a.AnnotationMBeanExporter [restartedMain] Autodetecting user-defined JMX MBeans
+2021-02-08 11:00:20,176 DEBUG o.s.j.e.a.AnnotationMBeanExporter [restartedMain] Bean with name 'dataSource' has been autodetected for JMX exposure
+2021-02-08 11:00:20,181 DEBUG o.s.j.e.a.AnnotationMBeanExporter [restartedMain] Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2021-02-08 11:00:20,185 DEBUG o.s.c.s.DefaultLifecycleProcessor [restartedMain] Starting beans in phase 2147483646
+2021-02-08 11:00:20,186 INFO o.a.c.h.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-08 11:00:20,207 DEBUG o.s.c.s.DefaultLifecycleProcessor [restartedMain] Successfully started bean 'webServerStartStop'
+2021-02-08 11:00:20,207 DEBUG o.s.c.s.DefaultLifecycleProcessor [restartedMain] Starting beans in phase 2147483647
+2021-02-08 11:00:20,207 DEBUG o.s.c.s.DefaultLifecycleProcessor [restartedMain] Successfully started bean 'webServerGracefulShutdown'
+2021-02-08 11:00:20,217 DEBUG o.s.c.e.PropertySourcesPropertyResolver [restartedMain] Found key 'spring.liveBeansView.mbeanDomain' in PropertySource 'systemProperties' with value of type String
+2021-02-08 11:00:20,233 INFO c.c.f.o.s.SimpleBlockchainApplication [restartedMain] Started SimpleBlockchainApplication in 5.059 seconds (JVM running for 6.992)
+2021-02-08 11:00:20,389 DEBUG o.s.c.e.PropertySourcesPropertyResolver [RMI TCP Connection(1)-127.0.0.1] Found key 'local.server.port' in PropertySource 'server.ports' with value of type Integer
+2021-02-08 11:00:20,787 DEBUG c.c.f.o.s.SimpleBlockchainApplication [restartedMain] Log info here.
+2021-02-08 11:00:20,828 DEBUG c.c.f.o.s.SimpleBlockchainApplication [restartedMain] 
+Logn infor here  
+WalletA's balance is: 100.0
+Log info here.
+
+Logn infor here  
+WalletA's balance is: 100.0

@@ -21,7 +21,7 @@ public class Government {
         TaxContext smallBizCntx = new TaxContext(taxPolicy);
         TaxContext largeBizCntx = new TaxContext(taxPolicyLarge);
 
-        switch (entity.getType().label){
+        switch (entity.getType().name()){
             case "small":
                 return smallBizCntx.tax(entity);
             case "larege":

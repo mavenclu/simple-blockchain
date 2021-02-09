@@ -2,7 +2,8 @@ package cz.cvut.fel.omo.simpleblockchain.node.NodeUtils;
 
 public enum AgricultureSector {
     CROPS("crops"),
-    LIVESTOCK("livestock");
+    LIVESTOCK("livestock"),
+    DIARY("diary");
 
     public final String label;
 
