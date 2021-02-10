@@ -42,34 +42,6 @@ public class Node {
     }
 
 
-    public void addUnclassifiedProductData(Node sender, Product product, String data) throws SignatureException {
-        byte[] msg = data.getBytes(StandardCharsets.UTF_8);
-        this.getWallet().getSign().update(msg);
-        byte[] signature = this.getWallet().getSign().sign();
-        product.addData(this, data,  signature);
-    }
-    public void addClassifiedProductData(Product product, String data) throws BadPaddingException, IllegalBlockSizeException {
-        byte[] input = data.getBytes();
-        this.getWallet().getCipher().update(input);
-        byte[] cipherText = this.getWallet().getCipher().doFinal();
-        product.addData(this, new String(cipherText),null);//todo
-    }
-    public String readPublicProductData(Product product){
-        return ""; //todo
-    }
-
-    public String readClassifiedData(Product product) throws BadPaddingException, InvalidKeyException, IllegalBlockSizeException {
-        String ciphertext = new String(product.getData().get(this.getType()));
-        return this.getWallet().readClassifiedData(ciphertext);
-    }
-
-    public byte[] signData(String data) throws SignatureException {
-        byte[] msg = data.getBytes(StandardCharsets.UTF_8);
-        this.getWallet().getSign().update(msg);
-        byte[] signature = this.getWallet().getSign().sign();
-        return signature;
-    }
-
 
     public static class Builder {
         private UUID identification;

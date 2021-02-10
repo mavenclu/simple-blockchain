@@ -28,10 +28,11 @@ that is why other nodes have no access to this info
 public class ProductData {
 
     private Node sender;
+    private Node recepient;
     private String claimsToBe;
     private byte[] signature;
     private String msg;
-    private ClassifiedMsg classifiedMessage;
+    private byte[] classifiedMsg;
 
     public ProductData(){}
     public ProductData(String msg, byte[] signature){
@@ -45,4 +46,19 @@ public class ProductData {
         this.msg = data;
         this.sender = sender;
     }
+    public ProductData(Node sender, String info, byte [] signature){
+        this.sender = sender;
+        this.msg = info;
+        this.signature = signature;
+    }
+    public ProductData(Node sender, Node recepient, byte[] info, byte [] signature){
+        this.sender = sender;
+        this.recepient = recepient;
+        this.classifiedMsg = info;
+        this.signature = signature;
+    }
+    public boolean hasClassifiedMsg(){
+        return this.getClassifiedMsg() != null;
+    }
+
 }

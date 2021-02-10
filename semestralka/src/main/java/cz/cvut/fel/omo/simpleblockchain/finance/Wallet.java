@@ -105,10 +105,11 @@ public class Wallet {
         return newTransaction;
     }
 
-    public String readClassifiedData(String cipherText) throws InvalidKeyException, BadPaddingException, IllegalBlockSizeException {
+    public String readClassifiedData(byte[] cipherText) throws InvalidKeyException, BadPaddingException, IllegalBlockSizeException {
         getCipher().init(Cipher.DECRYPT_MODE, this.privateKey);
-        byte[] plaintext = getCipher().doFinal(cipherText.getBytes(StandardCharsets.UTF_8));
+        byte[] plaintext = getCipher().doFinal(cipherText);
         return new String(plaintext);
 
     }
+
 }
