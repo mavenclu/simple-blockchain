@@ -7,3 +7,4 @@
 1. Builder (`Node` class)
 1. Strategy (`TaxPolicy` class)
 1. Factory Method (`Farmer`)
+1. Map, filter pattern (`Product`)
