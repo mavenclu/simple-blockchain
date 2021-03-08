@@ -29,17 +29,19 @@ public class Channel {
         this.participants = participants;
     }
 
-    public void register(Node node){
+    public void register(Node node) {
         participants.add(node);
     }
-    public void unregister(Node node){
+
+    public void unregister(Node node) {
         participants.remove(node);
     }
 
-    public void postComodityRequest(Request request){
+    public void postComodityRequest(Request request) {
         comodityReqests.add(request);
     }
-    public void respondToComodityRequest(Node supplier, int requestId){
+
+    public void respondToComodityRequest(Node supplier, int requestId) {
         handleRequest(comodityReqests.get(requestId));
         comodityReqests.remove(requestId);
     }

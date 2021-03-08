@@ -6,11 +6,11 @@ public class FarmerCreator extends FCreator {
 
     @Override
     public Farmer makeFarmer(String farmerType, String farmername) {
-        if (farmerType.equals("small")){
-            return new SmallFarmer(NodeType.FARMER,farmername);
-        }else if (farmerType.equals("large")){
-            return new LargeFarmer(NodeType.FARMER, farmername);
-        }else {
+        if (farmerType.equals("small")) {
+            return new SmallFarmer(farmername);
+        } else if (farmerType.equals("large")) {
+            return new LargeFarmer(farmername);
+        } else {
             return null;
         }
     }

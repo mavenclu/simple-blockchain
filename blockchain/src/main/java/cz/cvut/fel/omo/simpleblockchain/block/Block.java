@@ -28,34 +28,34 @@ public class Block {
     private int nonce;
 
 
-    public Block(String previousHash){
+    public Block(String previousHash) {
         this.previousHash = previousHash;
         this.timeStamp = new Date().getTime();
         this.hash = calculateHash();
     }
 
 
-    public String calculateHash(){
+    public String calculateHash() {
         return HashUtil.applySha256(
                 previousHash + timeStamp + nonce + data + merkleRoot);
     }
 
-    public void mineBlock(int difficulty){
+    public void mineBlock(int difficulty) {
         merkleRoot = HashUtil.getMerkleRoot(transactions);
         String target = HashUtil.getDifficultyString(difficulty);
-        while (!hash.substring(0, difficulty).equals(target)){
-            nonce ++;
+        while (!hash.substring(0, difficulty).equals(target)) {
+            nonce++;
             hash = calculateHash();
         }
         System.out.println("Block mined. " + hash);
     }
 
-    public boolean addTransaction(Transaction transaction){
+    public boolean addTransaction(Transaction transaction) {
         if (transaction == null) {
             return false;
         }
-        if (!"0".equals(previousHash)){
-            if (!transaction.processTransaction()){
+        if (!"0".equals(previousHash)) {
+            if (!transaction.processTransaction()) {
                 System.out.println("Transaction failed to process. Discarded.");
                 return false;
             }
@@ -66,16 +66,16 @@ public class Block {
     }
 
     public boolean addData(Product product, ProductData productData) throws SignatureException, InvalidKeyException {
-        if (product == null || productData == null){
+        if (product == null || productData == null) {
             return false;
         }
-        if (!verifyDataSignature(productData)){
+        if (!verifyDataSignature(productData)) {
             System.out.println("Failed to verify data. Discarded.");
             return false;
         }
-        if (this.data.get(product) != null){
+        if (this.data.get(product) != null) {
             this.data.get(product).add(productData);
-        }else {
+        } else {
             this.data.put(product, new ArrayList<>());
             this.data.get(product).add(productData);
             System.out.println("Data successfully added.");
@@ -89,15 +89,13 @@ public class Block {
         Signature sign = productData.getSender().getWallet().getSign();
         PublicKey senderPubKey = productData.getSender().getWallet().publicKey;
         sign.initVerify(senderPubKey);
-        if (productData.hasClassifiedMsg()){
+        if (productData.hasClassifiedMsg()) {
             sign.update(productData.getClassifiedMsg());
-        }else {
+        } else {
             sign.update(productData.getMsg().getBytes());
         }
         return sign.verify(productData.getSignature());
     }
-
-
 
 
 }

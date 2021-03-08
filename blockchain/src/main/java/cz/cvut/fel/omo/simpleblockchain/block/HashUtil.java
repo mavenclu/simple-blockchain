@@ -1,4 +1,5 @@
 package cz.cvut.fel.omo.simpleblockchain.block;
+
 import com.google.gson.GsonBuilder;
 import cz.cvut.fel.omo.simpleblockchain.finance.Transaction;
 
@@ -12,7 +13,7 @@ public class HashUtil {
     takes a string and applies SHA256 algorithm to it,
     and returns the generated signature as a string.
      */
-    public static String applySha256(String stringToHash){
+    public static String applySha256(String stringToHash) {
         try {
             MessageDigest msg = MessageDigest.getInstance("SHA-256");
             byte[] hash = msg.digest(stringToHash.getBytes(StandardCharsets.UTF_8));
@@ -25,10 +26,11 @@ public class HashUtil {
                 hexString.append(hex);
             }
             return hexString.toString();
-        }catch (Exception e){
+        } catch (Exception e) {
             throw new RuntimeException();
         }
     }
+
     /*
      takes in the senders private key and string input,
      signs it and returns an array of bytes.
@@ -59,14 +61,15 @@ public class HashUtil {
             ecdsaVerify.initVerify(publicKey);
             ecdsaVerify.update(data.getBytes());
             return ecdsaVerify.verify(signature);
-        }catch(Exception e) {
+        } catch (Exception e) {
             throw new RuntimeException(e);
         }
     }
+
     /*
 	Returns difficulty string target, to compare to hash. eg difficulty of 5 will return "00000"
      */
-    public static String getDifficultyString(int difficulty){
+    public static String getDifficultyString(int difficulty) {
         return new String(new char[difficulty]).replace('\0', '0');
     }
 
@@ -84,14 +87,14 @@ public class HashUtil {
     public static String getMerkleRoot(ArrayList<Transaction> transactions) {
         int count = transactions.size();
         ArrayList<String> previousTreeLayer = new ArrayList<String>();
-        for(Transaction transaction : transactions) {
+        for (Transaction transaction : transactions) {
             previousTreeLayer.add(transaction.transactionId);
         }
         ArrayList<String> treeLayer = previousTreeLayer;
-        while(count > 1) {
+        while (count > 1) {
             treeLayer = new ArrayList<String>();
-            for(int i=1; i < previousTreeLayer.size(); i++) {
-                treeLayer.add(applySha256(previousTreeLayer.get(i-1) + previousTreeLayer.get(i)));
+            for (int i = 1; i < previousTreeLayer.size(); i++) {
+                treeLayer.add(applySha256(previousTreeLayer.get(i - 1) + previousTreeLayer.get(i)));
             }
             count = treeLayer.size();
             previousTreeLayer = treeLayer;

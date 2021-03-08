@@ -24,38 +24,37 @@ public class Node {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Setter(AccessLevel.NONE)
-    private  long id;
+    private long id;
     private final UUID identification;
     private final Wallet wallet;
     private double profit;
     private String name;
 
 
-
-
-    public Node( String name) {
+    public Node(String name) {
         this.identification = UUID.randomUUID();
         this.name = name;
         wallet = new Wallet();
     }
 
-    public Node(){
+    public Node() {
         this.identification = UUID.randomUUID();
         this.wallet = new Wallet();
     }
 
 
-
     public static class Builder {
         private String trademark;
 
-        public Builder(){}
+        public Builder() {
+        }
 
-        public Builder withTrademark(String trademark){
+        public Builder withTrademark(String trademark) {
             this.trademark = trademark;
             return this;
         }
-        public Node build(){
+
+        public Node build() {
             return new Node(trademark);
         }
     }

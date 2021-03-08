@@ -23,11 +23,12 @@ public class Product {
     private double price;
     private List<ProductData> data;
 
-    public Product(){
+    public Product() {
         this.data = new ArrayList<>();
 
     }
-    public Product(String name){
+
+    public Product(String name) {
         this.name = name;
         this.data = new ArrayList<>();
     }
@@ -47,7 +48,7 @@ public class Product {
     public void addClassifiedData(Node sender, Node recepient, String info) throws SignatureException, BadPaddingException, IllegalBlockSizeException {
         byte[] msg = info.getBytes();
         recepient.getWallet().getCipher().update(msg);
-        byte[] encryptedMsg  = recepient.getWallet().getCipher().doFinal();
+        byte[] encryptedMsg = recepient.getWallet().getCipher().doFinal();
         sender.getWallet().getSign().update(encryptedMsg);
         byte[] signature = sender.getWallet().getSign().sign();
         ProductData newData = new ProductData(sender, recepient, encryptedMsg, signature);
@@ -64,8 +65,9 @@ public class Product {
         return productData;
 
     }
-    public List<String> readClassifiedData(Node reader){
-        List<String> classifiedData ;
+
+    public List<String> readClassifiedData(Node reader) {
+        List<String> classifiedData;
         classifiedData = this.getData()
                 .stream()
                 .filter(ProductData::hasClassifiedMsg)
@@ -81,9 +83,11 @@ public class Product {
                 .collect(Collectors.toList());
         return classifiedData;
     }
-    public void readUtil(Node reader, ProductData data){
+
+    public void readUtil(Node reader, ProductData data) {
 
     }
+
     public String decipherUtil(Node reader, byte[] ciphertext) throws BadPaddingException, InvalidKeyException, IllegalBlockSizeException {
         return reader.getWallet().readClassifiedData(ciphertext);
     }

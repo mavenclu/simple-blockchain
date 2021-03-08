@@ -34,30 +34,37 @@ public class ProductData {
     private String msg;
     private byte[] classifiedMsg;
 
-    public ProductData(){}
-    public ProductData(String msg, byte[] signature){
+    public ProductData() {
+    }
+
+    public ProductData(String msg, byte[] signature) {
         this.msg = msg;
         this.signature = signature;
     }
-    public ProductData(String data){
+
+    public ProductData(String data) {
         this.msg = data;
     }
-    public ProductData(Node sender, String data){
+
+    public ProductData(Node sender, String data) {
         this.msg = data;
         this.sender = sender;
     }
-    public ProductData(Node sender, String info, byte [] signature){
+
+    public ProductData(Node sender, String info, byte[] signature) {
         this.sender = sender;
         this.msg = info;
         this.signature = signature;
     }
-    public ProductData(Node sender, Node recepient, byte[] info, byte [] signature){
+
+    public ProductData(Node sender, Node recepient, byte[] info, byte[] signature) {
         this.sender = sender;
         this.recepient = recepient;
         this.classifiedMsg = info;
         this.signature = signature;
     }
-    public boolean hasClassifiedMsg(){
+
+    public boolean hasClassifiedMsg() {
         return this.getClassifiedMsg() != null;
     }
 

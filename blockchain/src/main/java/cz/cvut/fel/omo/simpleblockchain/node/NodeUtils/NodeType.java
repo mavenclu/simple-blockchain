@@ -10,7 +10,8 @@ public enum NodeType {
     GOVERNMENT("government");
 
     private final String label;
-    private NodeType(String label){
+
+    private NodeType(String label) {
         this.label = label;
     }
 

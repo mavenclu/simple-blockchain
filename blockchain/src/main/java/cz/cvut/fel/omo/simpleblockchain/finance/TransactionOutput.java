@@ -16,14 +16,14 @@ public class TransactionOutput {
         this.parentTransactionId = parentTransactionId;
         this.id = HashUtil.applySha256(
                 HashUtil.getStringFromKey(reciepient) +
-                Float.toString(value) +
-                parentTransactionId);
+                        Float.toString(value) +
+                        parentTransactionId);
     }
 
     /*
     check if coin belongs to you
      */
-    public boolean isMine(PublicKey publicKey){
+    public boolean isMine(PublicKey publicKey) {
         return publicKey == reciepient;
     }
 }

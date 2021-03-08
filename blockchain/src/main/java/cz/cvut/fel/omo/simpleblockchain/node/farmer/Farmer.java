@@ -19,22 +19,14 @@ public class Farmer extends Node {
     private List<AgricultureSector> sectors;
     private HashMap<Product, Amount> amountOfAvaliableProducts;
 
-    public Farmer(NodeType type, String name) {
-        super(type, name);
+    public Farmer( String name) {
+        super(name);
     }
 
 
-    private void setProductPrice(Product product, double price){
+    private void setProductPrice(Product product, double price) {
         product.setPrice(price);
     }
-
-
-
-
-
-
-
-
 
 
 }

@@ -20,28 +20,28 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class BlockTest {
 
-        public static Product lettuce;
-        static FarmerCreator farmerCreator = new FarmerCreator();
-        static Node farmer;
-        static Processor processor;
-        static Customer customer;
-        static Distributor distributor;
-        private static Farmer competitorFarmer;
-        public static ArrayList<Block> blockchain = new ArrayList<Block>();
-
+    public static Product lettuce;
+    public static ArrayList<Block> blockchain = new ArrayList<Block>();
+    static FarmerCreator farmerCreator = new FarmerCreator();
+    static Node farmer;
+    static Processor processor;
+    static Customer customer;
+    static Distributor distributor;
+    private static Farmer competitorFarmer;
 
     @BeforeAll
-        static void setUp() throws BadPaddingException, SignatureException, IllegalBlockSizeException {
-            lettuce = new Product("Lettuce");
-            farmer = farmerCreator.makeFarmer("small", "Farma Opocno");
-            competitorFarmer = farmerCreator.makeFarmer("large", "AgroForTen");
-            processor = new Processor(NodeType.PROCESSOR, "ProccessedFoods Corp.");
-            customer = new Customer(NodeType.CUSTOMER, "Jan Novak");
-            distributor = new Distributor(NodeType.DISTRIBUTOR, "Fast and Safe Delivery");
+    static void setUp() throws BadPaddingException, SignatureException, IllegalBlockSizeException {
+        lettuce = new Product("Lettuce");
+        farmer = farmerCreator.makeFarmer("small", "Farma Opocno");
+        competitorFarmer = farmerCreator.makeFarmer("large", "AgroForTen");
+        processor = new Processor( "ProccessedFoods Corp.");
+        customer = new Customer( "Jan Novak");
+        distributor = new Distributor( "Fast and Safe Delivery");
 
-            lettuce.addClassifiedData(farmer, processor, "here are confidential data from farmer: "
-                    + farmer.getName() + " to processor: " + processor.getName());
-        }
+        lettuce.addClassifiedData(farmer, processor, "here are confidential data from farmer: "
+                + farmer.getName() + " to processor: " + processor.getName());
+    }
+
     @Test
     void addTransaction() {
 

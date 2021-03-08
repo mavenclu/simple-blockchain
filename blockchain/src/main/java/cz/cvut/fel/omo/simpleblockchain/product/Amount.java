@@ -2,6 +2,7 @@ package cz.cvut.fel.omo.simpleblockchain.product;
 
 import lombok.Getter;
 import lombok.Setter;
+
 /*
 class to hold info for the amount and measure for the product.
 example 10.4 kg
